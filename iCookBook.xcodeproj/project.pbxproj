@@ -9,21 +9,39 @@
 /* Begin PBXBuildFile section */
 		0C70745929AA71380035A981 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C70745829AA71380035A981 /* AppDelegate.swift */; };
 		0C70745B29AA71380035A981 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C70745A29AA71380035A981 /* SceneDelegate.swift */; };
-		0C70745D29AA71380035A981 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C70745C29AA71380035A981 /* ViewController.swift */; };
+		0C70745D29AA71380035A981 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C70745C29AA71380035A981 /* HomeViewController.swift */; };
 		0C70746029AA71380035A981 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C70745E29AA71380035A981 /* Main.storyboard */; };
 		0C70746229AA713B0035A981 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C70746129AA713B0035A981 /* Assets.xcassets */; };
 		0C70746529AA713B0035A981 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C70746329AA713B0035A981 /* LaunchScreen.storyboard */; };
+		0C70746E29AA72210035A981 /* Guidelines in Resources */ = {isa = PBXBuildFile; fileRef = 0C70746D29AA72210035A981 /* Guidelines */; };
+		0C70747929AA73300035A981 /* UILabel + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C70747229AA73300035A981 /* UILabel + Extension.swift */; };
+		0C70747B29AA73300035A981 /* UIColor + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C70747429AA73300035A981 /* UIColor + Extension.swift */; };
+		0C70747C29AA73300035A981 /* UIButton + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C70747529AA73300035A981 /* UIButton + Extension.swift */; };
+		0C70747D29AA73300035A981 /* UIViewControler + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C70747629AA73300035A981 /* UIViewControler + Extension.swift */; };
+		0CB19AAC29AB56B500AABC61 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB19AAB29AB56B500AABC61 /* DetailsViewController.swift */; };
+		0CB19AAE29AB56DF00AABC61 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB19AAD29AB56DF00AABC61 /* FavoritesViewController.swift */; };
+		0CB19AB029AB56FE00AABC61 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB19AAF29AB56FE00AABC61 /* SearchViewController.swift */; };
+		0CB19AB229AB571A00AABC61 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB19AB129AB571A00AABC61 /* CategoryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0C70745529AA71380035A981 /* iCookBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iCookBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C70745829AA71380035A981 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0C70745A29AA71380035A981 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0C70745C29AA71380035A981 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0C70745C29AA71380035A981 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		0C70745F29AA71380035A981 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0C70746129AA713B0035A981 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0C70746429AA713B0035A981 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0C70746629AA713B0035A981 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0C70746D29AA72210035A981 /* Guidelines */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Guidelines; sourceTree = "<group>"; };
+		0C70747229AA73300035A981 /* UILabel + Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel + Extension.swift"; sourceTree = "<group>"; };
+		0C70747429AA73300035A981 /* UIColor + Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor + Extension.swift"; sourceTree = "<group>"; };
+		0C70747529AA73300035A981 /* UIButton + Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton + Extension.swift"; sourceTree = "<group>"; };
+		0C70747629AA73300035A981 /* UIViewControler + Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewControler + Extension.swift"; sourceTree = "<group>"; };
+		0CB19AAB29AB56B500AABC61 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		0CB19AAD29AB56DF00AABC61 /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
+		0CB19AAF29AB56FE00AABC61 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		0CB19AB129AB571A00AABC61 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +74,112 @@
 		0C70745729AA71380035A981 /* iCookBook */ = {
 			isa = PBXGroup;
 			children = (
-				0C70745829AA71380035A981 /* AppDelegate.swift */,
-				0C70745A29AA71380035A981 /* SceneDelegate.swift */,
-				0C70745C29AA71380035A981 /* ViewController.swift */,
-				0C70745E29AA71380035A981 /* Main.storyboard */,
+				0C70746D29AA72210035A981 /* Guidelines */,
+				0C70746F29AA723B0035A981 /* Application */,
+				0C70746C29AA71990035A981 /* Resources */,
+				0C70747029AA73300035A981 /* Extensions */,
+				0C70747F29AA73AD0035A981 /* MainFlow */,
+			);
+			path = iCookBook;
+			sourceTree = "<group>";
+		};
+		0C70746C29AA71990035A981 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				0C70746129AA713B0035A981 /* Assets.xcassets */,
 				0C70746329AA713B0035A981 /* LaunchScreen.storyboard */,
 				0C70746629AA713B0035A981 /* Info.plist */,
 			);
-			path = iCookBook;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		0C70746F29AA723B0035A981 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				0C70745E29AA71380035A981 /* Main.storyboard */,
+				0C70745829AA71380035A981 /* AppDelegate.swift */,
+				0C70745A29AA71380035A981 /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		0C70747029AA73300035A981 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				0C70747129AA73300035A981 /* UIKit */,
+				0C70747829AA73300035A981 /* Elements */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		0C70747129AA73300035A981 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				0C70747229AA73300035A981 /* UILabel + Extension.swift */,
+				0C70747429AA73300035A981 /* UIColor + Extension.swift */,
+				0C70747529AA73300035A981 /* UIButton + Extension.swift */,
+				0C70747629AA73300035A981 /* UIViewControler + Extension.swift */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		0C70747829AA73300035A981 /* Elements */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Elements;
+			sourceTree = "<group>";
+		};
+		0C70747F29AA73AD0035A981 /* MainFlow */ = {
+			isa = PBXGroup;
+			children = (
+				0CB19AAA29AA761E00AABC61 /* Detail Module */,
+				0CB19AA929AA75DC00AABC61 /* Category Module */,
+				0CB19AA829AA75CC00AABC61 /* Search Module */,
+				0CB19AA729AA75A700AABC61 /* Favorites Module */,
+				0CB19AA629AA758900AABC61 /* Home Module */,
+			);
+			path = MainFlow;
+			sourceTree = "<group>";
+		};
+		0CB19AA629AA758900AABC61 /* Home Module */ = {
+			isa = PBXGroup;
+			children = (
+				0C70745C29AA71380035A981 /* HomeViewController.swift */,
+			);
+			path = "Home Module";
+			sourceTree = "<group>";
+		};
+		0CB19AA729AA75A700AABC61 /* Favorites Module */ = {
+			isa = PBXGroup;
+			children = (
+				0CB19AAD29AB56DF00AABC61 /* FavoritesViewController.swift */,
+			);
+			path = "Favorites Module";
+			sourceTree = "<group>";
+		};
+		0CB19AA829AA75CC00AABC61 /* Search Module */ = {
+			isa = PBXGroup;
+			children = (
+				0CB19AAF29AB56FE00AABC61 /* SearchViewController.swift */,
+			);
+			path = "Search Module";
+			sourceTree = "<group>";
+		};
+		0CB19AA929AA75DC00AABC61 /* Category Module */ = {
+			isa = PBXGroup;
+			children = (
+				0CB19AB129AB571A00AABC61 /* CategoryViewController.swift */,
+			);
+			path = "Category Module";
+			sourceTree = "<group>";
+		};
+		0CB19AAA29AA761E00AABC61 /* Detail Module */ = {
+			isa = PBXGroup;
+			children = (
+				0CB19AAB29AB56B500AABC61 /* DetailsViewController.swift */,
+			);
+			path = "Detail Module";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,6 +243,7 @@
 				0C70746529AA713B0035A981 /* LaunchScreen.storyboard in Resources */,
 				0C70746229AA713B0035A981 /* Assets.xcassets in Resources */,
 				0C70746029AA71380035A981 /* Main.storyboard in Resources */,
+				0C70746E29AA72210035A981 /* Guidelines in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,9 +254,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C70745D29AA71380035A981 /* ViewController.swift in Sources */,
+				0CB19AB029AB56FE00AABC61 /* SearchViewController.swift in Sources */,
+				0C70745D29AA71380035A981 /* HomeViewController.swift in Sources */,
+				0CB19AAE29AB56DF00AABC61 /* FavoritesViewController.swift in Sources */,
 				0C70745929AA71380035A981 /* AppDelegate.swift in Sources */,
+				0C70747C29AA73300035A981 /* UIButton + Extension.swift in Sources */,
+				0CB19AAC29AB56B500AABC61 /* DetailsViewController.swift in Sources */,
+				0C70747B29AA73300035A981 /* UIColor + Extension.swift in Sources */,
+				0C70747929AA73300035A981 /* UILabel + Extension.swift in Sources */,
 				0C70745B29AA71380035A981 /* SceneDelegate.swift in Sources */,
+				0CB19AB229AB571A00AABC61 /* CategoryViewController.swift in Sources */,
+				0C70747D29AA73300035A981 /* UIViewControler + Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,12 +413,14 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = W856DM7S8L;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = iCookBook/Info.plist;
+				INFOPLIST_FILE = iCookBook/Resources/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.food-and-drink";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,9 +428,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.Djinsolobzik.iCookBook;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -317,12 +446,14 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = W856DM7S8L;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = iCookBook/Info.plist;
+				INFOPLIST_FILE = iCookBook/Resources/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.food-and-drink";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -330,9 +461,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.Djinsolobzik.iCookBook;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
