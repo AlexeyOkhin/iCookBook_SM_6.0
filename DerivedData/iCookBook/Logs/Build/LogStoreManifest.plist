@@ -40,6 +40,40 @@
 			<key>uniqueIdentifier</key>
 			<string>309E2436-D0B9-4650-A640-24681167F43C</string>
 		</dict>
+		<key>3C5B2487-AAB9-4227-9F01-8E3583B809A1</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>3C5B2487-AAB9-4227-9F01-8E3583B809A1.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>iCookBook project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>iCookBook</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build iCookBook</string>
+			<key>timeStartedRecording</key>
+			<real>699097898.98257196</real>
+			<key>timeStoppedRecording</key>
+			<real>699097906.721668</real>
+			<key>title</key>
+			<string>Build iCookBook</string>
+			<key>uniqueIdentifier</key>
+			<string>3C5B2487-AAB9-4227-9F01-8E3583B809A1</string>
+		</dict>
 		<key>5F28C36A-12D4-4A46-9D59-28700B8BBA08</key>
 		<dict>
 			<key>className</key>
