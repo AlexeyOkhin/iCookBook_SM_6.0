@@ -1,6 +1,6 @@
 //
 //  ModuleBuilder.swift
-//  Tinkoff-Test
+//  
 //
 //  Created by Djinsolobzik on 04.02.2023.
 //

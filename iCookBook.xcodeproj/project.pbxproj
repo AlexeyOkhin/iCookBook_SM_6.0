@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		0C55BF8D29AB6B0F00D5F20A /* ModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C55BF8C29AB6B0F00D5F20A /* ModuleBuilder.swift */; };
+		0C55BF8F29AB6D0300D5F20A /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C55BF8E29AB6D0300D5F20A /* NetworkService.swift */; };
+		0C55BF9229AB700900D5F20A /* RecipesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C55BF9129AB700900D5F20A /* RecipesModel.swift */; };
 		0C70745929AA71380035A981 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C70745829AA71380035A981 /* AppDelegate.swift */; };
 		0C70745D29AA71380035A981 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C70745C29AA71380035A981 /* HomeViewController.swift */; };
 		0C70746229AA713B0035A981 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C70746129AA713B0035A981 /* Assets.xcassets */; };
@@ -28,6 +30,8 @@
 
 /* Begin PBXFileReference section */
 		0C55BF8C29AB6B0F00D5F20A /* ModuleBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModuleBuilder.swift; sourceTree = "<group>"; };
+		0C55BF8E29AB6D0300D5F20A /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		0C55BF9129AB700900D5F20A /* RecipesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesModel.swift; sourceTree = "<group>"; };
 		0C70745529AA71380035A981 /* iCookBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iCookBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C70745829AA71380035A981 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0C70745C29AA71380035A981 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -65,6 +69,14 @@
 				0C55BF8C29AB6B0F00D5F20A /* ModuleBuilder.swift */,
 			);
 			path = ModuleBuilder;
+			sourceTree = "<group>";
+		};
+		0C55BF9029AB6FF100D5F20A /* DTO */ = {
+			isa = PBXGroup;
+			children = (
+				0C55BF9129AB700900D5F20A /* RecipesModel.swift */,
+			);
+			path = DTO;
 			sourceTree = "<group>";
 		};
 		0C70744C29AA71380035A981 = {
@@ -157,6 +169,7 @@
 		0CB19AA629AA758900AABC61 /* Home Module */ = {
 			isa = PBXGroup;
 			children = (
+				0C55BF9029AB6FF100D5F20A /* DTO */,
 				0C70745C29AA71380035A981 /* HomeViewController.swift */,
 			);
 			path = "Home Module";
@@ -215,6 +228,7 @@
 		0CF70F7829AB5EBA00153C01 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				0C55BF8E29AB6D0300D5F20A /* NetworkService.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -308,7 +322,9 @@
 				0CB19AAC29AB56B500AABC61 /* DetailsViewController.swift in Sources */,
 				0C70747B29AA73300035A981 /* UIColor + Extension.swift in Sources */,
 				0C70747929AA73300035A981 /* UILabel + Extension.swift in Sources */,
+				0C55BF9229AB700900D5F20A /* RecipesModel.swift in Sources */,
 				0CF70F7C29AB5EEF00153C01 /* TabBarModel.swift in Sources */,
+				0C55BF8F29AB6D0300D5F20A /* NetworkService.swift in Sources */,
 				0CF70F7629AB5E1800153C01 /* FavoriteStorage.swift in Sources */,
 				0C55BF8D29AB6B0F00D5F20A /* ModuleBuilder.swift in Sources */,
 				0CB19AB229AB571A00AABC61 /* СategoriesViewController.swift in Sources */,
