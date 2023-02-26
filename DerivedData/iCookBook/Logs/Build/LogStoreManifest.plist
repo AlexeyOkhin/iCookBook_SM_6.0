@@ -40,6 +40,74 @@
 			<key>uniqueIdentifier</key>
 			<string>2E94C18A-4088-4456-8BE8-BD249CF55B95</string>
 		</dict>
+		<key>AC92EBF7-88D4-46E5-A3F3-6DC0F290CF33</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>AC92EBF7-88D4-46E5-A3F3-6DC0F290CF33.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>E</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>iCookBook project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>iCookBook</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build iCookBook</string>
+			<key>timeStartedRecording</key>
+			<real>699102031.19229102</real>
+			<key>timeStoppedRecording</key>
+			<real>699102031.71048796</real>
+			<key>title</key>
+			<string>Build iCookBook</string>
+			<key>uniqueIdentifier</key>
+			<string>AC92EBF7-88D4-46E5-A3F3-6DC0F290CF33</string>
+		</dict>
+		<key>FE5D9D74-C743-4871-82A9-F9F393D9E92B</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>FE5D9D74-C743-4871-82A9-F9F393D9E92B.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>iCookBook project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>iCookBook</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build iCookBook</string>
+			<key>timeStartedRecording</key>
+			<real>699101784.42973006</real>
+			<key>timeStoppedRecording</key>
+			<real>699101792.43028402</real>
+			<key>title</key>
+			<string>Build iCookBook</string>
+			<key>uniqueIdentifier</key>
+			<string>FE5D9D74-C743-4871-82A9-F9F393D9E92B</string>
+		</dict>
 	</dict>
 </dict>
 </plist>
