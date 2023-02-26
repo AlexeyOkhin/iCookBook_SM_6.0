@@ -17,8 +17,7 @@ final class NetvorkService: NetworkServicesProtocol {
 
     private let baseUrl = "https://api.spoonacular.com/recipes/"
     private let request = "?"
-    private let apiKey = "??"
-
+    private let apiKey = PrivateConstants.apiKey
     //MARK: -  Methods
 
     func getPopularRecipes(completion: @escaping (Result<RecipesModel?, Error>) -> Void) {

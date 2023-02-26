@@ -6,6 +6,96 @@
 	<integer>10</integer>
 	<key>logs</key>
 	<dict>
+		<key>049AB912-2D3E-444E-9FE9-69DA09A9AC40</key>
+		<dict>
+			<key>auxiliaryLogUniqueIdentifier</key>
+			<string>FE5D9D74-C743-4871-82A9-F9F393D9E92B</string>
+			<key>auxiliaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>className</key>
+			<string>IDESchemeActionsInvocationRecord</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
+			<key>fileName</key>
+			<string>Run-iCookBook-2023.02.26_15-56-24-+0500.xcresult</string>
+			<key>hasAuxiliaryLog</key>
+			<true/>
+			<key>hasConsoleLog</key>
+			<true/>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>iCookBook project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>iCookBook</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run iCookBook</string>
+			<key>timeStartedRecording</key>
+			<real>699101784.42807806</real>
+			<key>timeStoppedRecording</key>
+			<real>0.0</real>
+			<key>title</key>
+			<string>Run iCookBook</string>
+			<key>uniqueIdentifier</key>
+			<string>049AB912-2D3E-444E-9FE9-69DA09A9AC40</string>
+		</dict>
+		<key>6FD349CD-6385-4554-AE1A-804A86B35B6E</key>
+		<dict>
+			<key>auxiliaryLogUniqueIdentifier</key>
+			<string>AC92EBF7-88D4-46E5-A3F3-6DC0F290CF33</string>
+			<key>auxiliaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>E</string>
+			</dict>
+			<key>className</key>
+			<string>IDESchemeActionsInvocationRecord</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
+			<key>fileName</key>
+			<string>Run-iCookBook-2023.02.26_16-00-31-+0500.xcresult</string>
+			<key>hasAuxiliaryLog</key>
+			<true/>
+			<key>hasConsoleLog</key>
+			<true/>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>E</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>iCookBook project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>iCookBook</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run iCookBook</string>
+			<key>timeStartedRecording</key>
+			<real>699102031.19200504</real>
+			<key>timeStoppedRecording</key>
+			<real>0.0</real>
+			<key>title</key>
+			<string>Run iCookBook</string>
+			<key>uniqueIdentifier</key>
+			<string>6FD349CD-6385-4554-AE1A-804A86B35B6E</string>
+		</dict>
 		<key>7B7B24E4-174C-452E-BF3F-C6B365A1C472</key>
 		<dict>
 			<key>auxiliaryLogUniqueIdentifier</key>

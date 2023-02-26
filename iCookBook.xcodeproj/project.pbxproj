@@ -12,6 +12,7 @@
 		0C55BF9229AB700900D5F20A /* RecipesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C55BF9129AB700900D5F20A /* RecipesModel.swift */; };
 		0C55BF9629AB70DF00D5F20A /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C55BF9429AB70DF00D5F20A /* ImageLoader.swift */; };
 		0C55BF9729AB70DF00D5F20A /* UIImageView + ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C55BF9529AB70DF00D5F20A /* UIImageView + ImageLoader.swift */; };
+		0C583B3629AB72D700739429 /* PrivateConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C583B3529AB72D700739429 /* PrivateConstants.swift */; };
 		0C70745929AA71380035A981 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C70745829AA71380035A981 /* AppDelegate.swift */; };
 		0C70745D29AA71380035A981 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C70745C29AA71380035A981 /* HomeViewController.swift */; };
 		0C70746229AA713B0035A981 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C70746129AA713B0035A981 /* Assets.xcassets */; };
@@ -36,6 +37,7 @@
 		0C55BF9129AB700900D5F20A /* RecipesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesModel.swift; sourceTree = "<group>"; };
 		0C55BF9429AB70DF00D5F20A /* ImageLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
 		0C55BF9529AB70DF00D5F20A /* UIImageView + ImageLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView + ImageLoader.swift"; sourceTree = "<group>"; };
+		0C583B3529AB72D700739429 /* PrivateConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivateConstants.swift; sourceTree = "<group>"; };
 		0C70745529AA71380035A981 /* iCookBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iCookBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C70745829AA71380035A981 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0C70745C29AA71380035A981 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -92,6 +94,14 @@
 			path = ImageLoader;
 			sourceTree = "<group>";
 		};
+		0C583B3429AB72B900739429 /* PrivateKeys */ = {
+			isa = PBXGroup;
+			children = (
+				0C583B3529AB72D700739429 /* PrivateConstants.swift */,
+			);
+			path = PrivateKeys;
+			sourceTree = "<group>";
+		};
 		0C70744C29AA71380035A981 = {
 			isa = PBXGroup;
 			children = (
@@ -111,6 +121,7 @@
 		0C70745729AA71380035A981 /* iCookBook */ = {
 			isa = PBXGroup;
 			children = (
+				0C583B3429AB72B900739429 /* PrivateKeys */,
 				0CF70F7729AB5EA500153C01 /* Services */,
 				0C70746D29AA72210035A981 /* Guidelines */,
 				0C70746F29AA723B0035A981 /* Application */,
@@ -330,6 +341,7 @@
 				0CB19AB029AB56FE00AABC61 /* SearchViewController.swift in Sources */,
 				0C70745D29AA71380035A981 /* HomeViewController.swift in Sources */,
 				0CB19AAE29AB56DF00AABC61 /* FavoritesViewController.swift in Sources */,
+				0C583B3629AB72D700739429 /* PrivateConstants.swift in Sources */,
 				0C70745929AA71380035A981 /* AppDelegate.swift in Sources */,
 				0CF70F7D29AB5EEF00153C01 /* TabBarConfigurator.swift in Sources */,
 				0C70747C29AA73300035A981 /* UIButton + Extension.swift in Sources */,
