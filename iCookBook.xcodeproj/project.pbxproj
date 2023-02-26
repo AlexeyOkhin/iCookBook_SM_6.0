@@ -22,6 +22,7 @@
 		0CB19AAE29AB56DF00AABC61 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB19AAD29AB56DF00AABC61 /* FavoritesViewController.swift */; };
 		0CB19AB029AB56FE00AABC61 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB19AAF29AB56FE00AABC61 /* SearchViewController.swift */; };
 		0CB19AB229AB571A00AABC61 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB19AB129AB571A00AABC61 /* CategoryViewController.swift */; };
+		0CF70F7629AB5E1800153C01 /* FavoriteStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF70F7529AB5E1800153C01 /* FavoriteStorage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		0CB19AAD29AB56DF00AABC61 /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
 		0CB19AAF29AB56FE00AABC61 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		0CB19AB129AB571A00AABC61 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
+		0CF70F7529AB5E1800153C01 /* FavoriteStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteStorage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 		0C70745729AA71380035A981 /* iCookBook */ = {
 			isa = PBXGroup;
 			children = (
+				0CF70F7429AB5DF700153C01 /* Storage */,
 				0C70746D29AA72210035A981 /* Guidelines */,
 				0C70746F29AA723B0035A981 /* Application */,
 				0C70746C29AA71990035A981 /* Resources */,
@@ -182,6 +185,14 @@
 			path = "Detail Module";
 			sourceTree = "<group>";
 		};
+		0CF70F7429AB5DF700153C01 /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				0CF70F7529AB5E1800153C01 /* FavoriteStorage.swift */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -263,6 +274,7 @@
 				0C70747B29AA73300035A981 /* UIColor + Extension.swift in Sources */,
 				0C70747929AA73300035A981 /* UILabel + Extension.swift in Sources */,
 				0C70745B29AA71380035A981 /* SceneDelegate.swift in Sources */,
+				0CF70F7629AB5E1800153C01 /* FavoriteStorage.swift in Sources */,
 				0CB19AB229AB571A00AABC61 /* CategoryViewController.swift in Sources */,
 				0C70747D29AA73300035A981 /* UIViewControler + Extension.swift in Sources */,
 			);
