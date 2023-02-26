@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C55BF8D29AB6B0F00D5F20A /* ModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C55BF8C29AB6B0F00D5F20A /* ModuleBuilder.swift */; };
 		0C70745929AA71380035A981 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C70745829AA71380035A981 /* AppDelegate.swift */; };
 		0C70745D29AA71380035A981 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C70745C29AA71380035A981 /* HomeViewController.swift */; };
 		0C70746229AA713B0035A981 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C70746129AA713B0035A981 /* Assets.xcassets */; };
@@ -26,6 +27,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0C55BF8C29AB6B0F00D5F20A /* ModuleBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModuleBuilder.swift; sourceTree = "<group>"; };
 		0C70745529AA71380035A981 /* iCookBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iCookBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C70745829AA71380035A981 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0C70745C29AA71380035A981 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -57,6 +59,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0C55BF8B29AB6B0F00D5F20A /* ModuleBuilder */ = {
+			isa = PBXGroup;
+			children = (
+				0C55BF8C29AB6B0F00D5F20A /* ModuleBuilder.swift */,
+			);
+			path = ModuleBuilder;
+			sourceTree = "<group>";
+		};
 		0C70744C29AA71380035A981 = {
 			isa = PBXGroup;
 			children = (
@@ -195,6 +205,7 @@
 		0CF70F7729AB5EA500153C01 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				0C55BF8B29AB6B0F00D5F20A /* ModuleBuilder */,
 				0CF70F7829AB5EBA00153C01 /* Networking */,
 				0CF70F7429AB5DF700153C01 /* Storage */,
 			);
@@ -299,6 +310,7 @@
 				0C70747929AA73300035A981 /* UILabel + Extension.swift in Sources */,
 				0CF70F7C29AB5EEF00153C01 /* TabBarModel.swift in Sources */,
 				0CF70F7629AB5E1800153C01 /* FavoriteStorage.swift in Sources */,
+				0C55BF8D29AB6B0F00D5F20A /* ModuleBuilder.swift in Sources */,
 				0CB19AB229AB571A00AABC61 /* СategoriesViewController.swift in Sources */,
 				0C70747D29AA73300035A981 /* UIViewControler + Extension.swift in Sources */,
 			);
