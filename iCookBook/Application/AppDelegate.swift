@@ -22,7 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func startApplicationProcess() {
-        runLaunchScreen()
+       // runLaunchScreen()
         runMainFlow()
     }
 
