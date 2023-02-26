@@ -20,7 +20,7 @@ enum TabBarModel {
     var properties: TabProperties {
         switch self {
         case .home:
-            return TabProperties(title: "Популярные рецепты", image: UIImage(systemName: "list.bullet.rectangle")!)
+            return TabProperties(title: "Популярные", image: UIImage(systemName: "list.bullet.rectangle")!)
         case .favorite:
             return TabProperties(title: "Избранное", image: UIImage(systemName: "heart.fill")!)
         case .search:
