@@ -29,6 +29,10 @@
 		0CF70F7629AB5E1800153C01 /* FavoriteStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF70F7529AB5E1800153C01 /* FavoriteStorage.swift */; };
 		0CF70F7C29AB5EEF00153C01 /* TabBarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF70F7A29AB5EEF00153C01 /* TabBarModel.swift */; };
 		0CF70F7D29AB5EEF00153C01 /* TabBarConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF70F7B29AB5EEF00153C01 /* TabBarConfigurator.swift */; };
+		ABFBCB6229AE776100693217 /* RecipeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFBCB6129AE776100693217 /* RecipeTableViewCell.swift */; };
+		ABFBCB6429AE8C9F00693217 /* ImageLoader2.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFBCB6329AE8C9F00693217 /* ImageLoader2.swift */; };
+		ABFBCB6629AE8CBF00693217 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFBCB6529AE8CBE00693217 /* NetworkManager.swift */; };
+		ABFBCB6829AE92B700693217 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFBCB6729AE92B700693217 /* GradientView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +60,10 @@
 		0CF70F7529AB5E1800153C01 /* FavoriteStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteStorage.swift; sourceTree = "<group>"; };
 		0CF70F7A29AB5EEF00153C01 /* TabBarModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarModel.swift; sourceTree = "<group>"; };
 		0CF70F7B29AB5EEF00153C01 /* TabBarConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarConfigurator.swift; sourceTree = "<group>"; };
+		ABFBCB6129AE776100693217 /* RecipeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeTableViewCell.swift; sourceTree = "<group>"; };
+		ABFBCB6329AE8C9F00693217 /* ImageLoader2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader2.swift; sourceTree = "<group>"; };
+		ABFBCB6529AE8CBE00693217 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		ABFBCB6729AE92B700693217 /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +88,7 @@
 		0C55BF9029AB6FF100D5F20A /* DTO */ = {
 			isa = PBXGroup;
 			children = (
+				ABFBCB6729AE92B700693217 /* GradientView.swift */,
 				0C55BF9129AB700900D5F20A /* RecipesModel.swift */,
 			);
 			path = DTO;
@@ -90,6 +99,8 @@
 			children = (
 				0C55BF9429AB70DF00D5F20A /* ImageLoader.swift */,
 				0C55BF9529AB70DF00D5F20A /* UIImageView + ImageLoader.swift */,
+				ABFBCB6329AE8C9F00693217 /* ImageLoader2.swift */,
+				ABFBCB6529AE8CBE00693217 /* NetworkManager.swift */,
 			);
 			path = ImageLoader;
 			sourceTree = "<group>";
@@ -185,18 +196,18 @@
 				0CB19AA929AA75DC00AABC61 /* Сategories Module */,
 				0CB19AA829AA75CC00AABC61 /* Search Module */,
 				0CB19AA729AA75A700AABC61 /* Favorites Module */,
-				0CB19AA629AA758900AABC61 /* Home Module */,
+				ABFBCB6029AE771200693217 /* Home Module */,
 			);
 			path = MainFlow;
 			sourceTree = "<group>";
 		};
-		0CB19AA629AA758900AABC61 /* Home Module */ = {
+		0CB19AA629AA758900AABC61 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
 				0C55BF9029AB6FF100D5F20A /* DTO */,
-				0C70745C29AA71380035A981 /* HomeViewController.swift */,
+				ABFBCB6129AE776100693217 /* RecipeTableViewCell.swift */,
 			);
-			path = "Home Module";
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		0CB19AA729AA75A700AABC61 /* Favorites Module */ = {
@@ -265,6 +276,15 @@
 				0CF70F7B29AB5EEF00153C01 /* TabBarConfigurator.swift */,
 			);
 			path = TabBar;
+			sourceTree = "<group>";
+		};
+		ABFBCB6029AE771200693217 /* Home Module */ = {
+			isa = PBXGroup;
+			children = (
+				0C70745C29AA71380035A981 /* HomeViewController.swift */,
+				0CB19AA629AA758900AABC61 /* Cell */,
+			);
+			path = "Home Module";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -339,8 +359,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				0CB19AB029AB56FE00AABC61 /* SearchViewController.swift in Sources */,
+				ABFBCB6829AE92B700693217 /* GradientView.swift in Sources */,
 				0C70745D29AA71380035A981 /* HomeViewController.swift in Sources */,
 				0CB19AAE29AB56DF00AABC61 /* FavoritesViewController.swift in Sources */,
+				ABFBCB6429AE8C9F00693217 /* ImageLoader2.swift in Sources */,
+				ABFBCB6629AE8CBF00693217 /* NetworkManager.swift in Sources */,
 				0C583B3629AB72D700739429 /* PrivateConstants.swift in Sources */,
 				0C70745929AA71380035A981 /* AppDelegate.swift in Sources */,
 				0CF70F7D29AB5EEF00153C01 /* TabBarConfigurator.swift in Sources */,
@@ -349,6 +372,7 @@
 				0C70747B29AA73300035A981 /* UIColor + Extension.swift in Sources */,
 				0C70747929AA73300035A981 /* UILabel + Extension.swift in Sources */,
 				0C55BF9229AB700900D5F20A /* RecipesModel.swift in Sources */,
+				ABFBCB6229AE776100693217 /* RecipeTableViewCell.swift in Sources */,
 				0CF70F7C29AB5EEF00153C01 /* TabBarModel.swift in Sources */,
 				0C55BF9629AB70DF00D5F20A /* ImageLoader.swift in Sources */,
 				0C55BF8F29AB6D0300D5F20A /* NetworkService.swift in Sources */,
@@ -495,7 +519,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = W856DM7S8L;
+				DEVELOPMENT_TEAM = V544T4J767;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = iCookBook/Resources/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.food-and-drink";
@@ -527,7 +551,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = W856DM7S8L;
+				DEVELOPMENT_TEAM = V544T4J767;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = iCookBook/Resources/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.food-and-drink";

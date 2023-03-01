@@ -8,7 +8,7 @@
 import Foundation
 
 protocol NetworkServicesProtocol {
-    func getPopularRecipes(completion: @escaping(Result<RecipesModel?, Error>) -> Void)
+    func getPopularRecipes(completion: @escaping(Result<SpoonacularModel, Error>) -> Void)
 }
 
 final class NetvorkService: NetworkServicesProtocol {
@@ -16,13 +16,15 @@ final class NetvorkService: NetworkServicesProtocol {
     //MARK: - Private Properties
 
     private let baseUrl = "https://api.spoonacular.com/recipes/"
+    private let random = "random"
     private let request = "?"
-    private let apiKey = PrivateConstants.apiKey
+    private let apiKey = PrivateConstants.apiKey2
+
     //MARK: -  Methods
 
-    func getPopularRecipes(completion: @escaping (Result<RecipesModel?, Error>) -> Void) {
+    func getPopularRecipes(completion: @escaping (Result<SpoonacularModel, Error>) -> Void) {
 
-        let urlString = "\(baseUrl)\(request)/&apiKey=\(apiKey)"
+        let urlString = "\(baseUrl)\(random)?/&apiKey=\(apiKey)&number=10&sort=popular"
         guard  let url = URL(string: urlString) else { return }
 
         URLSession.shared.dataTask(with: url) { data, _, error in
@@ -34,7 +36,7 @@ final class NetvorkService: NetworkServicesProtocol {
             guard let data else { return }
 
             do {
-                let object = try JSONDecoder().decode(RecipesModel.self, from: data)
+                let object = try JSONDecoder().decode(SpoonacularModel.self, from: data)
                 completion(.success(object))
             } catch {
                 completion(.failure(error))
