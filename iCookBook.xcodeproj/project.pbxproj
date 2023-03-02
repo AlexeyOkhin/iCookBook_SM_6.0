@@ -29,6 +29,8 @@
 		0CF70F7629AB5E1800153C01 /* FavoriteStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF70F7529AB5E1800153C01 /* FavoriteStorage.swift */; };
 		0CF70F7C29AB5EEF00153C01 /* TabBarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF70F7A29AB5EEF00153C01 /* TabBarModel.swift */; };
 		0CF70F7D29AB5EEF00153C01 /* TabBarConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF70F7B29AB5EEF00153C01 /* TabBarConfigurator.swift */; };
+		D0FB06A229AF869E0080C387 /* SearchCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0FB06A129AF869E0080C387 /* SearchCellView.swift */; };
+		D0FB06A429AFA8210080C387 /* ResultsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0FB06A329AFA8210080C387 /* ResultsVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +58,8 @@
 		0CF70F7529AB5E1800153C01 /* FavoriteStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteStorage.swift; sourceTree = "<group>"; };
 		0CF70F7A29AB5EEF00153C01 /* TabBarModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarModel.swift; sourceTree = "<group>"; };
 		0CF70F7B29AB5EEF00153C01 /* TabBarConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarConfigurator.swift; sourceTree = "<group>"; };
+		D0FB06A129AF869E0080C387 /* SearchCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCellView.swift; sourceTree = "<group>"; };
+		D0FB06A329AFA8210080C387 /* ResultsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -211,6 +215,8 @@
 			isa = PBXGroup;
 			children = (
 				0CB19AAF29AB56FE00AABC61 /* SearchViewController.swift */,
+				D0FB06A329AFA8210080C387 /* ResultsVC.swift */,
+				D0FB06A129AF869E0080C387 /* SearchCellView.swift */,
 			);
 			path = "Search Module";
 			sourceTree = "<group>";
@@ -346,6 +352,8 @@
 				0CF70F7D29AB5EEF00153C01 /* TabBarConfigurator.swift in Sources */,
 				0C70747C29AA73300035A981 /* UIButton + Extension.swift in Sources */,
 				0CB19AAC29AB56B500AABC61 /* DetailsViewController.swift in Sources */,
+				D0FB06A429AFA8210080C387 /* ResultsVC.swift in Sources */,
+				D0FB06A229AF869E0080C387 /* SearchCellView.swift in Sources */,
 				0C70747B29AA73300035A981 /* UIColor + Extension.swift in Sources */,
 				0C70747929AA73300035A981 /* UILabel + Extension.swift in Sources */,
 				0C55BF9229AB700900D5F20A /* RecipesModel.swift in Sources */,
