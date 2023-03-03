@@ -15,7 +15,8 @@ class SearchCellView: UITableViewCell {
         let title = UILabel()
         title.font = .systemFont(ofSize: 20, weight: .medium)
         title.numberOfLines = 0
-        title.text = "Hello"
+        title.textColor = .black
+        title.textAlignment = .left
         
         return title
     }()
@@ -23,23 +24,32 @@ class SearchCellView: UITableViewCell {
     lazy var foodImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.layer.cornerRadius = 15
-        imageView.layer.masksToBounds = true
         imageView.contentMode = .scaleAspectFill
         imageView.clipsToBounds = true
+        imageView.layer.masksToBounds = true
         
         return imageView
     }()
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
-        contentView.addSubview(foodTitle)
-        contentView.addSubview(foodImageView)
+        addSubview(foodTitle)
+        addSubview(foodImageView)
         backgroundColor = .clear
     }
-    
+
     override func layoutSubviews() {
         super.layoutSubviews()
-
+        
+        foodTitle.frame = CGRect(x: 5,
+                                 y: 0,
+                                 width: contentView.frame.size.width - 170,
+                                 height: contentView.frame.size.height - 10)
+        
+        foodImageView.frame = CGRect(x: contentView.frame.size.width - 160,
+                                     y: 5,
+                                     width: 160,
+                                     height: contentView.frame.size.height - 10)
     }
     
     required init?(coder: NSCoder) {
@@ -52,9 +62,12 @@ class SearchCellView: UITableViewCell {
         foodImageView.image = nil
     }
     
-    func configure(with viewModel: SearchCellView) {
-        
+    func configureWith(recipe: Recipe) {
+        foodTitle.text = recipe.title
+        ImageLoader2.shared.fetchImage(for: recipe) { image, id, error in
+            if let image {
+                self.foodImageView.image = image
+            }
+        }
     }
-        
-    
 }

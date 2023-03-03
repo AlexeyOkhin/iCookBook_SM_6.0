@@ -12,16 +12,17 @@ class SearchViewController: UIViewController {
     lazy var letsFindLabel: UILabel = {
         let label = UILabel()
         label.text = "Let's find the tastiest recipe 🍕"
-        label.textColor = .systemBackground
+        label.textColor = .black
         label.font = .systemFont(ofSize: 24, weight: .black)
         label.numberOfLines = 0
+        label.textAlignment = .center
         label.translatesAutoresizingMaskIntoConstraints = false
         
         return label
     }()
     
     lazy var searchController = UISearchController(searchResultsController: ResultsVC())
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -40,7 +41,7 @@ extension SearchViewController {
     // MARK: Updates for main view
     
     private func viewUpdate() {
-        view.backgroundColor = .gray
+        view.backgroundColor = .white
         view.addSubview(letsFindLabel)
     }
     
@@ -59,16 +60,13 @@ extension SearchViewController {
                                                            action: nil)
     }
     
-    // MARK: Data Source Filtering
-    private func filterDataSource(searchTerm: String) {
-        
-    }
-    
     // MARK: Constraints update
     private func setupConstraints() {
         NSLayoutConstraint.activate([
             letsFindLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            letsFindLabel.centerYAnchor.constraint(equalTo: view.centerYAnchor)
+            letsFindLabel.centerYAnchor.constraint(equalTo: view.centerYAnchor),
+            letsFindLabel.leadingAnchor.constraint(equalTo: view.layoutMarginsGuide.leadingAnchor),
+            letsFindLabel.trailingAnchor.constraint(equalTo: view.layoutMarginsGuide.trailingAnchor),
         ])
     }
     
@@ -77,15 +75,25 @@ extension SearchViewController {
 
 
 
-// MARK: - UISearchController
+// MARK: - UISearchResultsUpdating
 extension SearchViewController: UISearchResultsUpdating {
     
     func updateSearchResults(for searchController: UISearchController) {
         guard let text = searchController.searchBar.text else { return }
-        let vc = searchController.searchResultsController as? ResultsVC
-        vc?.view.backgroundColor = .clear
+        guard let vc = searchController.searchResultsController as? ResultsVC else { return }
+        vc.view.backgroundColor = .clear
+        vc.filterCurrentDataSource(searchTerm: text)
         letsFindLabel.isHidden = true
-        print(text)
+        
+        if searchController.isActive && vc.currentData.isEmpty {
+            letsFindLabel.isHidden = false
+            letsFindLabel.text = "We don't have the recipes you're looking for. \n Try looking for another 🔎"
+        } else if !searchController.isActive {
+            letsFindLabel.isHidden = false
+            letsFindLabel.text = "Let's find the tastiest recipe 🍕"
+            return
+        }
+        
     }
     
 }
@@ -93,15 +101,15 @@ extension SearchViewController: UISearchResultsUpdating {
 
 
 
-// MARK: UISearchControllerDelegate
+// MARK: UISearchBarDelegate
 extension SearchViewController: UISearchBarDelegate {
     
-    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
-        letsFindLabel.isHidden = true
-    }
-    
-    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
-        letsFindLabel.isHidden = false
+    private func searchBahrSearchButtonClicked(_ searchBar: UISearchBar) {
+        guard let text = searchController.searchBar.text else { return }
+        guard let vc = searchController.searchResultsController as? ResultsVC else { return }
+        vc.view.backgroundColor = .clear
+        vc.filterCurrentDataSource(searchTerm: text)
+        
     }
     
 }

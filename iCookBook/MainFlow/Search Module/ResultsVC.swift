@@ -9,6 +9,12 @@ import UIKit
 
 class ResultsVC: UIViewController {
     
+    let networkService = NetworkService()
+    var requestFailed: Bool?
+    
+    var recipesArray = [Recipe]()
+    var currentData = [Recipe]()
+    
     lazy var tableView: UITableView = {
         let table = UITableView()
         table.register(SearchCellView.self,
@@ -18,13 +24,15 @@ class ResultsVC: UIViewController {
         return table
     }()
     
-    var recipeArray = ["10", "11", "12", "13", "daf", "10", "11", "12", "13", "daf"]
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         viewUpdate()
         setupConstraints()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        getPopularRecipes()
     }
     
 }
@@ -40,6 +48,34 @@ extension ResultsVC {
         tableView.delegate = self
         view.addSubview(tableView)
     }
+    
+    func filterCurrentDataSource(searchTerm: String) {
+        if searchTerm.count > 0 {
+            currentData = recipesArray
+            
+            let filteredResult = currentData.filter {
+                $0.title.replacingOccurrences(of: " ", with: "").lowercased().contains(searchTerm.replacingOccurrences(of: " ", with: "").lowercased())
+            }
+
+            currentData = filteredResult
+            tableView.reloadData()
+        }
+    }
+    
+    private func getPopularRecipes() {
+        networkService.getPopularRecipes { [weak self] result in
+            switch result {
+            case .success(let spoonacularModel):
+                DispatchQueue.main.async { [weak self] in
+                    self?.recipesArray = spoonacularModel?.recipes ?? []
+                    self?.tableView.reloadData()
+                }
+            case .failure:
+                self?.requestFailed = true
+            }
+        }
+    }
+    
     
     private func setupConstraints() {
         NSLayoutConstraint.activate([
@@ -57,16 +93,31 @@ extension ResultsVC {
 
 // MARK: - UITableViewDelegate, UITableViewDataSource
 extension ResultsVC: UITableViewDelegate, UITableViewDataSource {
+    
+    //MARK: FOR COUNTING CELL COUNT
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return recipeArray.count
+        return currentData.count
     }
     
+    //MARK: FOR CREATING CELL
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: SearchCellView.identifier,
-                                                       for: indexPath) as? SearchCellView else { fatalError() }
+        let cell = tableView.dequeueReusableCell(withIdentifier: SearchCellView.identifier,
+                                                       for: indexPath) as! SearchCellView
         
-        //cell.configure(with: recipeArray[indexPath.row])
+        let recepie = currentData[indexPath.row]
+        cell.configureWith(recipe: recepie)
+        
         return cell
     }
- 
+    
+    //MARK: FOR CHANGING CELL HEIGHT
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 140
+    }
+    
+    //MARK: FOR SELECTING CELL HEIGHT
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+    }
+    
 }
