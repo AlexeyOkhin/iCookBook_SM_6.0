@@ -8,25 +8,24 @@
 import Foundation
 
 protocol NetworkServicesProtocol {
-    func getPopularRecipes(completion: @escaping(Result<SpoonacularModel, Error>) -> Void)
+    func getPopularRecipes(completion: @escaping(Result<SpoonacularModel?, Error>) -> Void)
 }
 
-final class NetvorkService: NetworkServicesProtocol {
+final class NetworkService: NetworkServicesProtocol {
 
     //MARK: - Private Properties
-
+    
     private let baseUrl = "https://api.spoonacular.com/recipes/"
-    private let random = "random"
     private let request = "?"
-    private let apiKey = PrivateConstants.apiKey2
-
+    private let random = "random"
+    private let complexSearch = "complexSearch"
+    private let apiKey = PrivateConstants.apiKey3
     //MARK: -  Methods
+    
+    func getPopularRecipes(completion: @escaping (Result<SpoonacularModel?, Error>) -> Void) {
 
-    func getPopularRecipes(completion: @escaping (Result<SpoonacularModel, Error>) -> Void) {
-
-        let urlString = "\(baseUrl)\(random)?/&apiKey=\(apiKey)&number=10&sort=popular"
-        print(urlString)
-        guard  let url = URL(string: urlString) else { return }
+        let urlString = "\(baseUrl)/\(random)?/&apiKey=\(apiKey)&number=10&sort=popular"
+        guard let url = URL(string: urlString) else { return }
 
         URLSession.shared.dataTask(with: url) { data, _, error in
             if let error = error {

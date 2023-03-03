@@ -2,7 +2,7 @@
 //  NetworkManager.swift
 //  iCookBook
 //
-//  Created by Aleksey Kosov on 28.02.2023.
+//  Created by Нахид Гаджалиев on 02.03.2023.
 //
 
 import Foundation
