@@ -25,6 +25,7 @@ final class NetvorkService: NetworkServicesProtocol {
     func getPopularRecipes(completion: @escaping (Result<SpoonacularModel, Error>) -> Void) {
 
         let urlString = "\(baseUrl)\(random)?/&apiKey=\(apiKey)&number=10&sort=popular"
+        print(urlString)
         guard  let url = URL(string: urlString) else { return }
 
         URLSession.shared.dataTask(with: url) { data, _, error in

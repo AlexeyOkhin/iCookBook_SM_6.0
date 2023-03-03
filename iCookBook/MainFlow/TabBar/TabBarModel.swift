@@ -27,6 +27,7 @@ enum TabBarModel {
             return TabProperties(title: "Поиск", image: UIImage(systemName: "magnifyingglass")!)
         case.categories:
             return TabProperties(title: "Категории", image: UIImage(systemName: "line.3.horizontal")!)
+            #warning("crash ios 14")
         }
     }
 }

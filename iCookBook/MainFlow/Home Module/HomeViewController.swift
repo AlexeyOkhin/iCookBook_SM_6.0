@@ -63,7 +63,9 @@ private func setupLayout() {
 }
 
 extension HomeViewController: UITableViewDelegate {
-
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+    }
 }
 
 extension HomeViewController: UITableViewDataSource {
