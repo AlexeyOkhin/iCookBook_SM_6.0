@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		0C55BF8D29AB6B0F00D5F20A /* ModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C55BF8C29AB6B0F00D5F20A /* ModuleBuilder.swift */; };
 		0C55BF8F29AB6D0300D5F20A /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C55BF8E29AB6D0300D5F20A /* NetworkService.swift */; };
-		0C55BF9229AB700900D5F20A /* RecipesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C55BF9129AB700900D5F20A /* RecipesModel.swift */; };
 		0C55BF9629AB70DF00D5F20A /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C55BF9429AB70DF00D5F20A /* ImageLoader.swift */; };
 		0C55BF9729AB70DF00D5F20A /* UIImageView + ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C55BF9529AB70DF00D5F20A /* UIImageView + ImageLoader.swift */; };
 		0C583B3629AB72D700739429 /* PrivateConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C583B3529AB72D700739429 /* PrivateConstants.swift */; };
@@ -29,6 +28,9 @@
 		0CF70F7629AB5E1800153C01 /* FavoriteStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF70F7529AB5E1800153C01 /* FavoriteStorage.swift */; };
 		0CF70F7C29AB5EEF00153C01 /* TabBarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF70F7A29AB5EEF00153C01 /* TabBarModel.swift */; };
 		0CF70F7D29AB5EEF00153C01 /* TabBarConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF70F7B29AB5EEF00153C01 /* TabBarConfigurator.swift */; };
+		AB12701329B2691800D57357 /* RecipesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB12701029B2691800D57357 /* RecipesModel.swift */; };
+		AB12701429B2691800D57357 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB12701129B2691800D57357 /* GradientView.swift */; };
+		AB12701529B2691800D57357 /* RecipeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB12701229B2691800D57357 /* RecipeTableViewCell.swift */; };
 		D0C90B8329B0990300408149 /* ImageLoader2.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C90B8229B0990300408149 /* ImageLoader2.swift */; };
 		D0C90B8529B0992600408149 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C90B8429B0992600408149 /* NetworkManager.swift */; };
 		D0FB06A229AF869E0080C387 /* SearchCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0FB06A129AF869E0080C387 /* SearchCellView.swift */; };
@@ -38,7 +40,6 @@
 /* Begin PBXFileReference section */
 		0C55BF8C29AB6B0F00D5F20A /* ModuleBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModuleBuilder.swift; sourceTree = "<group>"; };
 		0C55BF8E29AB6D0300D5F20A /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
-		0C55BF9129AB700900D5F20A /* RecipesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesModel.swift; sourceTree = "<group>"; };
 		0C55BF9429AB70DF00D5F20A /* ImageLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
 		0C55BF9529AB70DF00D5F20A /* UIImageView + ImageLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView + ImageLoader.swift"; sourceTree = "<group>"; };
 		0C583B3529AB72D700739429 /* PrivateConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivateConstants.swift; sourceTree = "<group>"; };
@@ -60,6 +61,9 @@
 		0CF70F7529AB5E1800153C01 /* FavoriteStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteStorage.swift; sourceTree = "<group>"; };
 		0CF70F7A29AB5EEF00153C01 /* TabBarModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarModel.swift; sourceTree = "<group>"; };
 		0CF70F7B29AB5EEF00153C01 /* TabBarConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarConfigurator.swift; sourceTree = "<group>"; };
+		AB12701029B2691800D57357 /* RecipesModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipesModel.swift; sourceTree = "<group>"; };
+		AB12701129B2691800D57357 /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		AB12701229B2691800D57357 /* RecipeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeTableViewCell.swift; sourceTree = "<group>"; };
 		D0C90B8229B0990300408149 /* ImageLoader2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader2.swift; sourceTree = "<group>"; };
 		D0C90B8429B0992600408149 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		D0FB06A129AF869E0080C387 /* SearchCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCellView.swift; sourceTree = "<group>"; };
@@ -83,14 +87,6 @@
 				0C55BF8C29AB6B0F00D5F20A /* ModuleBuilder.swift */,
 			);
 			path = ModuleBuilder;
-			sourceTree = "<group>";
-		};
-		0C55BF9029AB6FF100D5F20A /* DTO */ = {
-			isa = PBXGroup;
-			children = (
-				0C55BF9129AB700900D5F20A /* RecipesModel.swift */,
-			);
-			path = DTO;
 			sourceTree = "<group>";
 		};
 		0C55BF9329AB70DF00D5F20A /* ImageLoader */ = {
@@ -203,7 +199,7 @@
 		0CB19AA629AA758900AABC61 /* Home Module */ = {
 			isa = PBXGroup;
 			children = (
-				0C55BF9029AB6FF100D5F20A /* DTO */,
+				AB12700E29B2691800D57357 /* Cell */,
 				0C70745C29AA71380035A981 /* HomeViewController.swift */,
 			);
 			path = "Home Module";
@@ -279,6 +275,25 @@
 			path = TabBar;
 			sourceTree = "<group>";
 		};
+		AB12700E29B2691800D57357 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				AB12700F29B2691800D57357 /* DTO */,
+				AB12701229B2691800D57357 /* RecipeTableViewCell.swift */,
+			);
+			name = Cell;
+			path = "../../../../../../Downloads/iCookBook_SM_6.0-feature_uiHomeViewController/iCookBook/MainFlow/Home Module/Cell";
+			sourceTree = "<group>";
+		};
+		AB12700F29B2691800D57357 /* DTO */ = {
+			isa = PBXGroup;
+			children = (
+				AB12701029B2691800D57357 /* RecipesModel.swift */,
+				AB12701129B2691800D57357 /* GradientView.swift */,
+			);
+			path = DTO;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -351,7 +366,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D0C90B8529B0992600408149 /* NetworkManager.swift in Sources */,
+				AB12701329B2691800D57357 /* RecipesModel.swift in Sources */,
 				0CB19AB029AB56FE00AABC61 /* SearchViewController.swift in Sources */,
+				AB12701529B2691800D57357 /* RecipeTableViewCell.swift in Sources */,
 				0C70745D29AA71380035A981 /* HomeViewController.swift in Sources */,
 				0CB19AAE29AB56DF00AABC61 /* FavoritesViewController.swift in Sources */,
 				0C583B3629AB72D700739429 /* PrivateConstants.swift in Sources */,
@@ -363,7 +380,6 @@
 				D0FB06A229AF869E0080C387 /* SearchCellView.swift in Sources */,
 				0C70747B29AA73300035A981 /* UIColor + Extension.swift in Sources */,
 				0C70747929AA73300035A981 /* UILabel + Extension.swift in Sources */,
-				0C55BF9229AB700900D5F20A /* RecipesModel.swift in Sources */,
 				0CF70F7C29AB5EEF00153C01 /* TabBarModel.swift in Sources */,
 				0C55BF9629AB70DF00D5F20A /* ImageLoader.swift in Sources */,
 				0C55BF8F29AB6D0300D5F20A /* NetworkService.swift in Sources */,
@@ -371,6 +387,7 @@
 				D0C90B8329B0990300408149 /* ImageLoader2.swift in Sources */,
 				0C55BF8D29AB6B0F00D5F20A /* ModuleBuilder.swift in Sources */,
 				0C55BF9729AB70DF00D5F20A /* UIImageView + ImageLoader.swift in Sources */,
+				AB12701429B2691800D57357 /* GradientView.swift in Sources */,
 				0CB19AB229AB571A00AABC61 /* СategoriesViewController.swift in Sources */,
 				0C70747D29AA73300035A981 /* UIViewControler + Extension.swift in Sources */,
 			);

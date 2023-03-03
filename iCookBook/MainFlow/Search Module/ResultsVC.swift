@@ -67,7 +67,7 @@ extension ResultsVC {
             switch result {
             case .success(let spoonacularModel):
                 DispatchQueue.main.async { [weak self] in
-                    self?.recipesArray = spoonacularModel?.recipes ?? []
+                    self?.recipesArray = spoonacularModel.recipes
                     self?.tableView.reloadData()
                 }
             case .failure:

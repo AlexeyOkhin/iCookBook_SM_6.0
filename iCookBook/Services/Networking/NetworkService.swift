@@ -8,7 +8,7 @@
 import Foundation
 
 protocol NetworkServicesProtocol {
-    func getPopularRecipes(completion: @escaping(Result<SpoonacularModel?, Error>) -> Void)
+    func getPopularRecipes(completion: @escaping(Result<SpoonacularModel, Error>) -> Void)
 }
 
 final class NetworkService: NetworkServicesProtocol {
@@ -19,10 +19,10 @@ final class NetworkService: NetworkServicesProtocol {
     private let request = "?"
     private let random = "random"
     private let complexSearch = "complexSearch"
-    private let apiKey = PrivateConstants.apiKey3
+    private let apiKey = PrivateConstants.apiKey
     //MARK: -  Methods
     
-    func getPopularRecipes(completion: @escaping (Result<SpoonacularModel?, Error>) -> Void) {
+    func getPopularRecipes(completion: @escaping (Result<SpoonacularModel, Error>) -> Void) {
 
         let urlString = "\(baseUrl)/\(random)?/&apiKey=\(apiKey)&number=10&sort=popular"
         guard let url = URL(string: urlString) else { return }

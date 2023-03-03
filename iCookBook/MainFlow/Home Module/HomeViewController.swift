@@ -17,7 +17,7 @@ final class HomeViewController: UIViewController {
         }
     }
 
-    let networkService = NetvorkService()
+    let networkService = NetworkService()
 
     private func getPopularRecipes() {
         networkService.getPopularRecipes { result in
