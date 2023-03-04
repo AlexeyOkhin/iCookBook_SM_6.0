@@ -281,8 +281,7 @@
 				AB12700F29B2691800D57357 /* DTO */,
 				AB12701229B2691800D57357 /* RecipeTableViewCell.swift */,
 			);
-			name = Cell;
-			path = "../../../../../../Downloads/iCookBook_SM_6.0-feature_uiHomeViewController/iCookBook/MainFlow/Home Module/Cell";
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		AB12700F29B2691800D57357 /* DTO */ = {
