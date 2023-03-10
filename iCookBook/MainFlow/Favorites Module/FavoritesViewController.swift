@@ -36,7 +36,7 @@ class FavoritesViewController: UIViewController {
         
         setupConstraints()
         configureNavigationTitle()
-        
+        favoritesStorage.decode()
     }
     
     override func viewWillAppear(_ animated: Bool) {

@@ -7,16 +7,8 @@
 
 import Foundation
 
-class SpoonacularModel: Codable, NSCoding {
+class SpoonacularModel: Codable {
     let recipes: [Recipe]
-    
-    func encode(with coder: NSCoder) {
-        coder.encode(recipes, forKey: "recipes")
-    }
-    
-    required init?(coder: NSCoder) {
-        recipes = coder.decodeObject(forKey: "recipes") as? [Recipe] ?? []
-    }
 }
 
 class Recipe: Codable {
