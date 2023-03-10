@@ -10,6 +10,8 @@ import UIKit
 class SearchCellView: UITableViewCell {
     
     static let identifier = "SearchCellView"
+    lazy var favoriteStorage = FavoriteStorage.shared
+    var favRecipe: Recipe?
     
     lazy var foodTitle: UILabel = {
         let title = UILabel()
@@ -31,6 +33,17 @@ class SearchCellView: UITableViewCell {
         return imageView
     }()
     
+    lazy var favoriteButton: UIButton = {
+        let button = UIButton(type: .system)
+        button.translatesAutoresizingMaskIntoConstraints = false
+        button.setBackgroundImage(UIImage(systemName: "bookmark.circle.fill")?.withRenderingMode(.alwaysTemplate),
+                                  for: .normal)
+        button.translatesAutoresizingMaskIntoConstraints = false
+        button.tintColor = .systemOrange
+        button.addTarget(nil, action: #selector(favTapped), for: .touchUpInside)
+        return button
+    }()
+    
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         addSubview(foodTitle)
@@ -50,6 +63,10 @@ class SearchCellView: UITableViewCell {
                                      y: 5,
                                      width: 160,
                                      height: contentView.frame.size.height - 10)
+        
+        NSLayoutConstraint.activate([
+            
+        ])
     }
     
     required init?(coder: NSCoder) {
@@ -62,7 +79,17 @@ class SearchCellView: UITableViewCell {
         foodImageView.image = nil
     }
     
+}
+
+
+
+
+// MARK: - ADDING METHODS
+
+extension SearchCellView {
+    
     func configureWith(recipe: Recipe) {
+        
         foodTitle.text = recipe.title
         ImageLoader2.shared.fetchImage(for: recipe) { image, id, error in
             if let image {
@@ -70,4 +97,18 @@ class SearchCellView: UITableViewCell {
             }
         }
     }
+    
+    @objc private func favTapped(sender: UIButton) {
+        guard let favoriteRecipe = favRecipe else { return }
+
+        if favoriteStorage.contains(favoriteRecipe) {
+            sender.tintColor = .white
+            favoriteStorage.remove(favoriteRecipe)
+        } else {
+            favoriteStorage.add(favoriteRecipe)
+            favRecipe?.isFaved = true
+            sender.tintColor = .systemOrange
+        }
+    }
+    
 }

@@ -34,7 +34,7 @@ final class ImageLoader2 {
             switch result {
             case .success(let data):
                 guard let image = UIImage(data: data) else {
-                    completion(nil, nil, "error" as! Error)
+                    completion(nil, nil, "error" as? Error)
                     return
                 }
                 ImageLoader2.cache.setObject(image, forKey: cacheKey)
@@ -42,7 +42,7 @@ final class ImageLoader2 {
                     completion(image, cacheKey, nil)
                 }
             case .failure(_):
-                completion(nil, nil, "error" as! Error)
+                completion(nil, nil, "error" as? Error)
             }
         }
     }
