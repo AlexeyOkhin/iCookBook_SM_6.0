@@ -147,13 +147,14 @@ final class RecipeTableViewCell: UITableViewCell {
         titleLabel.text = nil
         recipeImageView.image = nil
         secondaryLabel.text = nil
+        favoritesButton.tintColor = .white
         
-        switch favRecipe?.isFaved {
-        case true:
-            favoritesButton.tintColor = .orange
-        default:
-            favoritesButton.tintColor = .white
-        }
+//        switch favRecipe?.isFaved {
+//        case true:
+//            favoritesButton.tintColor = .orange
+//        default:
+//            favoritesButton.tintColor = .white
+//        }
         
     }
     

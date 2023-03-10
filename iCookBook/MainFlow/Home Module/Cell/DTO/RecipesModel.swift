@@ -7,11 +7,19 @@
 
 import Foundation
 
-struct SpoonacularModel: Decodable {
+class SpoonacularModel: Codable, NSCoding {
     let recipes: [Recipe]
+    
+    func encode(with coder: NSCoder) {
+        coder.encode(recipes, forKey: "recipes")
+    }
+    
+    required init?(coder: NSCoder) {
+        recipes = coder.decodeObject(forKey: "recipes") as? [Recipe] ?? []
+    }
 }
 
-struct Recipe: Decodable {
+class Recipe: Codable {
     let id: Int
     let title: String
     let image: String?
@@ -23,7 +31,7 @@ struct Recipe: Decodable {
     var favButtonColor: FavButtonColor?
 }
 
-struct ExtendedIngredient: Codable {
+class ExtendedIngredient: Codable {
     let id: Int
     let name: String
     let original, originalName: String

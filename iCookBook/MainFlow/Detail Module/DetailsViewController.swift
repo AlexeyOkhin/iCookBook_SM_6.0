@@ -14,7 +14,6 @@ class DetailsViewController: UIViewController {
     private lazy var tableView: UITableView = {
         let table = UITableView(frame: .zero, style: .plain)
         table.register(DetailsTableViewCell.self, forCellReuseIdentifier: DetailsTableViewCell.identifier)
-        table.delegate = self
         table.dataSource = self
         table.translatesAutoresizingMaskIntoConstraints = false
         
@@ -125,10 +124,8 @@ class DetailsViewController: UIViewController {
 
 
 
-extension DetailsViewController: UITableViewDelegate {
-    
-}
 
+// MARK: - UITableViewDataSource
 extension DetailsViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

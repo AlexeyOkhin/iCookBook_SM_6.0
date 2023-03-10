@@ -80,10 +80,9 @@ extension DetailsTableViewCell {
         ])
     }
     
-    
     func configure(object: ExtendedIngredient) {
         
-        ingridientsNameLabel.text = object.name
+        ingridientsNameLabel.text = object.name.capitalized
         amountLabel.text = String(object.amount)
         unitLabel.text = object.unit
         

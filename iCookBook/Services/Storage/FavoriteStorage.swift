@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Foundation
 
 //TODO: поправить нейминг под кухню
 
@@ -25,6 +26,7 @@ class FavoriteStorage {
     
     init() {
         self.recipes = []
+       
     }
     
     func contains(_ recipe: Recipe) -> Bool {
@@ -33,10 +35,16 @@ class FavoriteStorage {
     
     func add(_ recipe: Recipe) {
         recipes.append(recipe)
+        save()
     }
     
     func remove(_ recipe: Recipe) {
         recipes.removeAll(where: {$0.id == recipe.id })
+        save()
+    }
+    
+    func save() {
+        
     }
     
 }
