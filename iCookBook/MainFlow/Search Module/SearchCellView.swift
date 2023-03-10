@@ -63,6 +63,7 @@ class SearchCellView: UITableViewCell {
     }
     
     func configureWith(recipe: Recipe) {
+        
         foodTitle.text = recipe.title
         ImageLoader2.shared.fetchImage(for: recipe) { image, id, error in
             if let image {
@@ -70,4 +71,5 @@ class SearchCellView: UITableViewCell {
             }
         }
     }
+    
 }

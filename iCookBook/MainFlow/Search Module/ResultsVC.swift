@@ -117,7 +117,9 @@ extension ResultsVC: UITableViewDelegate, UITableViewDataSource {
     
     //MARK: FOR SELECTING CELL HEIGHT
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+        let vc = DetailsViewController()
+        vc.configure(recipe: currentData[indexPath.row])
+        present(vc, animated: true)
     }
     
 }
