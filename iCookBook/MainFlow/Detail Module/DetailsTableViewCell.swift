@@ -32,23 +32,10 @@ class DetailsTableViewCell: UITableViewCell {
         return label
     }()
     
-    private let unitLabel: UILabel = {
-        let label = UILabel()
-        label.text = "штук"
-        label.textColor = .systemGray
-        label.textAlignment = .center
-        label.font = .boldSystemFont(ofSize: 15)
-        label.translatesAutoresizingMaskIntoConstraints = false
-        return label
-    }()
-    
-    
-    
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         contentView.addSubview(ingridientsNameLabel)
         contentView.addSubview(amountLabel)
-        contentView.addSubview(unitLabel)
         isUserInteractionEnabled = false
         
         setConstraints()
@@ -68,24 +55,18 @@ extension DetailsTableViewCell {
     private func setConstraints() {
         NSLayoutConstraint.activate([
             
-            ingridientsNameLabel.leadingAnchor.constraint(equalTo: layoutMarginsGuide.leadingAnchor),
-            ingridientsNameLabel.centerYAnchor.constraint(equalTo: centerYAnchor),
+            ingridientsNameLabel.leadingAnchor.constraint(equalTo: contentView.layoutMarginsGuide.leadingAnchor),
+            ingridientsNameLabel.centerYAnchor.constraint(equalTo: contentView.centerYAnchor),
             
-            unitLabel.trailingAnchor.constraint(equalTo: layoutMarginsGuide.trailingAnchor),
-            unitLabel.centerYAnchor.constraint(equalTo: centerYAnchor),
-            
-            amountLabel.trailingAnchor.constraint(equalTo: unitLabel.leadingAnchor, constant: -5),
-            amountLabel.centerYAnchor.constraint(equalTo: centerYAnchor)
+            amountLabel.trailingAnchor.constraint(equalTo: contentView.layoutMarginsGuide.trailingAnchor, constant: -5),
+            amountLabel.centerYAnchor.constraint(equalTo: contentView.centerYAnchor)
             
         ])
     }
     
     func configure(object: ExtendedIngredient) {
-        
         ingridientsNameLabel.text = object.name.capitalized
-        amountLabel.text = String(object.amount)
-        unitLabel.text = object.unit
-        
+        amountLabel.text = String(format: "%g", object.amount) + " \(object.unit)"
     }
     
 }

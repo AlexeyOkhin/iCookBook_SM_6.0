@@ -7,11 +7,11 @@
 
 import Foundation
 
-class SpoonacularModel: Codable {
+struct SpoonacularModel: Codable {
     let recipes: [Recipe]
 }
 
-class Recipe: Codable {
+struct Recipe: Codable {
     let id: Int
     let title: String
     let image: String?
@@ -23,7 +23,7 @@ class Recipe: Codable {
     var favButtonColor: FavButtonColor?
 }
 
-class ExtendedIngredient: Codable {
+struct ExtendedIngredient: Codable {
     let id: Int
     let name: String
     let original, originalName: String
