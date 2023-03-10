@@ -33,6 +33,7 @@
 		AB12701529B2691800D57357 /* RecipeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB12701229B2691800D57357 /* RecipeTableViewCell.swift */; };
 		AF5DDC9129B5504600D4F478 /* FavouriteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5DDC9029B5504600D4F478 /* FavouriteTableViewCell.swift */; };
 		D042C1AB29BB38A000D52423 /* DetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D042C1AA29BB38A000D52423 /* DetailsTableViewCell.swift */; };
+		D042C1AD29BB79F700D52423 /* CategoryCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D042C1AC29BB79F700D52423 /* CategoryCellView.swift */; };
 		D0C90B8329B0990300408149 /* ImageLoader2.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C90B8229B0990300408149 /* ImageLoader2.swift */; };
 		D0C90B8529B0992600408149 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C90B8429B0992600408149 /* NetworkManager.swift */; };
 		D0FB06A229AF869E0080C387 /* SearchCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0FB06A129AF869E0080C387 /* SearchCellView.swift */; };
@@ -68,6 +69,7 @@
 		AB12701229B2691800D57357 /* RecipeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeTableViewCell.swift; sourceTree = "<group>"; };
 		AF5DDC9029B5504600D4F478 /* FavouriteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteTableViewCell.swift; sourceTree = "<group>"; };
 		D042C1AA29BB38A000D52423 /* DetailsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsTableViewCell.swift; sourceTree = "<group>"; };
+		D042C1AC29BB79F700D52423 /* CategoryCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCellView.swift; sourceTree = "<group>"; };
 		D0C90B8229B0990300408149 /* ImageLoader2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader2.swift; sourceTree = "<group>"; };
 		D0C90B8429B0992600408149 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		D0FB06A129AF869E0080C387 /* SearchCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCellView.swift; sourceTree = "<group>"; };
@@ -232,6 +234,7 @@
 			isa = PBXGroup;
 			children = (
 				0CB19AB129AB571A00AABC61 /* СategoriesViewController.swift */,
+				D042C1AC29BB79F700D52423 /* CategoryCellView.swift */,
 			);
 			path = "Сategories Module";
 			sourceTree = "<group>";
@@ -376,6 +379,7 @@
 				AB12701529B2691800D57357 /* RecipeTableViewCell.swift in Sources */,
 				0C70745D29AA71380035A981 /* HomeViewController.swift in Sources */,
 				0CB19AAE29AB56DF00AABC61 /* FavoritesViewController.swift in Sources */,
+				D042C1AD29BB79F700D52423 /* CategoryCellView.swift in Sources */,
 				0C583B3629AB72D700739429 /* PrivateConstants.swift in Sources */,
 				0C70745929AA71380035A981 /* AppDelegate.swift in Sources */,
 				0CF70F7D29AB5EEF00153C01 /* TabBarConfigurator.swift in Sources */,

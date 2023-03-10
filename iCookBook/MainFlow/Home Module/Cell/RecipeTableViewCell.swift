@@ -10,7 +10,6 @@ import UIKit
 final class RecipeTableViewCell: UITableViewCell {
     
     lazy var favoriteStorage = FavoriteStorage.shared
-    
     var favRecipe: Recipe?
     
     static let cellId = "recipeCell"

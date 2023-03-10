@@ -94,7 +94,6 @@ extension HomeViewController: UITableViewDataSource {
         let recipe = recipesArray[indexPath.row]
         cell.configureWith(recipe: recipe)
         cell.favRecipe = recipe
-        print(recipe.id)
         cell.textLabel?.text = recipe.title
         return cell
     }

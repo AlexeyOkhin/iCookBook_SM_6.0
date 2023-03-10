@@ -12,6 +12,8 @@ class FavouriteTableViewCell: UITableViewCell {
     static let favouriteCell = "favouriteCellView"
     lazy var favoriteStorage = FavoriteStorage.shared
     var favRecipe: Recipe?
+    lazy var bottomGradientView = GradientView(from: .top, to: .bottom, startColor: .clear, endColor: .black)
+    lazy var topGradientView = GradientView(from: .bottom, to: .top, startColor: .clear, endColor: .black)
     
     lazy var favouriteImageView: UIImageView = {
         let favouriteImage = UIImageView()
@@ -63,8 +65,22 @@ class FavouriteTableViewCell: UITableViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
-    lazy var bottomGradientView = GradientView(from: .top, to: .bottom, startColor: .clear, endColor: .black)
-    lazy var topGradientView = GradientView(from: .bottom, to: .top, startColor: .clear, endColor: .black)
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        
+        favouriteTitleLabel.text = nil
+        favouriteImageView.image = nil
+        favoritesButton.tintColor = .systemOrange
+    }
+    
+}
+
+
+
+
+// MARK: - ADDING METHODS
+
+extension FavouriteTableViewCell {
     
     @objc private func favTapped() {
         guard let favoriteRecipe = favRecipe else { return }
@@ -80,22 +96,6 @@ class FavouriteTableViewCell: UITableViewCell {
         }
         
     }
-    
-    override func prepareForReuse() {
-        super.prepareForReuse()
-        
-        favouriteTitleLabel.text = nil
-        favouriteImageView.image = nil
-    }
-    
-}
-
-
-
-
-// MARK: - ADDING METHODS
-
-extension FavouriteTableViewCell {
     
     func configureWith(recipe: Recipe) {
         favouriteTitleLabel.text = recipe.title

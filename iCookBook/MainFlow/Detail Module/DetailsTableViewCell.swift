@@ -68,14 +68,14 @@ extension DetailsTableViewCell {
     private func setConstraints() {
         NSLayoutConstraint.activate([
             
-            ingridientsNameLabel.leadingAnchor.constraint(equalTo: contentView.layoutMarginsGuide.leadingAnchor),
-            ingridientsNameLabel.centerYAnchor.constraint(equalTo: contentView.centerYAnchor),
+            ingridientsNameLabel.leadingAnchor.constraint(equalTo: layoutMarginsGuide.leadingAnchor),
+            ingridientsNameLabel.centerYAnchor.constraint(equalTo: centerYAnchor),
             
-            unitLabel.trailingAnchor.constraint(equalTo: contentView.layoutMarginsGuide.trailingAnchor),
-            unitLabel.centerYAnchor.constraint(equalTo: contentView.centerYAnchor),
+            unitLabel.trailingAnchor.constraint(equalTo: layoutMarginsGuide.trailingAnchor),
+            unitLabel.centerYAnchor.constraint(equalTo: centerYAnchor),
             
             amountLabel.trailingAnchor.constraint(equalTo: unitLabel.leadingAnchor, constant: -5),
-            amountLabel.centerYAnchor.constraint(equalTo: contentView.centerYAnchor)
+            amountLabel.centerYAnchor.constraint(equalTo: centerYAnchor)
             
         ])
     }

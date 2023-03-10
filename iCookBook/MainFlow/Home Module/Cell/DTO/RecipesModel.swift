@@ -33,6 +33,6 @@ struct ExtendedIngredient: Codable {
 }
 
 enum FavButtonColor: String, Codable {
-    case white
+    case clear
     case systemOrange
 }

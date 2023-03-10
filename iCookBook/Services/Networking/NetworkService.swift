@@ -19,7 +19,7 @@ final class NetworkService: NetworkServicesProtocol {
     private let request = "?"
     private let random = "random"
     private let complexSearch = "complexSearch"
-    private let apiKey = PrivateConstants.apiKey
+    private let apiKey = PrivateConstants.apiKey3
     //MARK: -  Methods
     
     func getPopularRecipes(completion: @escaping (Result<SpoonacularModel, Error>) -> Void) {
@@ -43,4 +43,31 @@ final class NetworkService: NetworkServicesProtocol {
             }
         }.resume()
     }
+    
+    /*
+    func getAllRecipes(completion: @escaping (Result<RecipeResults, Error>) -> Void) {
+
+        let urlString = "\(baseUrl)/\(complexSearch)?&apiKey=\(apiKey)&addRecipeInformation=true"
+        guard let url = URL(string: urlString) else { return }
+        print(url)
+
+        URLSession.shared.dataTask(with: url) { data, _, error in
+            if let error = error {
+                completion(.failure(error))
+                return
+            }
+
+            guard let data else { return }
+
+            do {
+                let object = try JSONDecoder().decode(RecipeResults.self, from: data)
+                completion(.success(object))
+            } catch {
+                completion(.failure(error))
+                print("ERROR")
+            }
+        }.resume()
+    }
+    */
+    
 }
