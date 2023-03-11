@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SearchViewController: UIViewController {
+final class SearchViewController: UIViewController {
     
     lazy var letsFindLabel: UILabel = {
         let label = UILabel()

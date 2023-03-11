@@ -7,8 +7,11 @@
 
 import UIKit
 
-class CategoryViewController: UIViewController {
-    
+
+final class CategoryViewController: UIViewController {
+
+    let cateogriesArray = CategoryModel.categoryModels
+
     lazy var tableView: UITableView = {
         let table = UITableView()
         table.register(CategoryCellView.self,
@@ -26,6 +29,8 @@ class CategoryViewController: UIViewController {
         tableView.delegate = self
         setupConstraints()
     }
+
+
     
     private func setupConstraints() {
         
@@ -41,13 +46,16 @@ class CategoryViewController: UIViewController {
 
 extension CategoryViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return cateogriesArray.count
     }
     
     //MARK: FOR CREATING CELL
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: CategoryCellView.identifier,
                                                        for: indexPath) as! CategoryCellView
+        let category = cateogriesArray[indexPath.row]
+
+        cell.configure(with: category)
         
         
         return cell
@@ -55,11 +63,15 @@ extension CategoryViewController: UITableViewDelegate, UITableViewDataSource {
     
     //MARK: FOR CHANGING CELL HEIGHT
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 140
+        return 200
     }
     
     //MARK: FOR SELECTING CELL HEIGHT
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+        let category = cateogriesArray[indexPath.row]
+
+        let categoryVC = HomeViewController(category: category)
+
+        navigationController?.pushViewController(categoryVC, animated: true)
     }
 }

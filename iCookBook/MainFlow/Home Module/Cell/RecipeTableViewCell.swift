@@ -19,7 +19,8 @@ final class RecipeTableViewCell: UITableViewCell {
         iv.translatesAutoresizingMaskIntoConstraints = false
         iv.contentMode = .scaleAspectFill
         iv.layer.cornerRadius = 5
-        iv.backgroundColor = .red
+        iv.backgroundColor = .clear
+        iv.image = UIImage(named: "placeholder")
         iv.clipsToBounds = true
         return iv
     }()

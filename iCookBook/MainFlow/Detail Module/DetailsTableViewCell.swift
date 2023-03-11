@@ -7,7 +7,7 @@
 
 import UIKit
 
-class DetailsTableViewCell: UITableViewCell {
+final class DetailsTableViewCell: UITableViewCell {
     
     static let identifier = "cell"
     var recipe: Recipe?

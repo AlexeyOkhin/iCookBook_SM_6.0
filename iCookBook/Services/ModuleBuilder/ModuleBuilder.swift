@@ -12,7 +12,7 @@ protocol Builder {
     //static func createDetailsModule() -> UIViewController
 }
 
-class ModuleBuilder: Builder {
+final class ModuleBuilder: Builder {
     static func createHomeModule() -> UIViewController {
         let view = HomeViewController()
         //let networkService = NetvorkService()

@@ -7,7 +7,7 @@
 
 import UIKit
 
-class FavouriteTableViewCell: UITableViewCell {
+final class FavouriteTableViewCell: UITableViewCell {
     
     static let favouriteCell = "favouriteCellView"
     lazy var favoriteStorage = FavoriteStorage.shared

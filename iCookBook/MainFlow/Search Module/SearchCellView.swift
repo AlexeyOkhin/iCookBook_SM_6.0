@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SearchCellView: UITableViewCell {
+final class SearchCellView: UITableViewCell {
     
     static let identifier = "SearchCellView"
     lazy var favoriteStorage = FavoriteStorage.shared

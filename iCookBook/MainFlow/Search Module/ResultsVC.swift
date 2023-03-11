@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ResultsVC: UIViewController {
+final class ResultsVC: UIViewController {
     
     let networkService = NetworkService()
     var requestFailed: Bool?

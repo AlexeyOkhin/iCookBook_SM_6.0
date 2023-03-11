@@ -31,6 +31,7 @@
 		AB12701329B2691800D57357 /* RecipesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB12701029B2691800D57357 /* RecipesModel.swift */; };
 		AB12701429B2691800D57357 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB12701129B2691800D57357 /* GradientView.swift */; };
 		AB12701529B2691800D57357 /* RecipeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB12701229B2691800D57357 /* RecipeTableViewCell.swift */; };
+		ABB243C229BCBC120078BC88 /* CategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB243C129BCBC120078BC88 /* CategoryModel.swift */; };
 		AF5DDC9129B5504600D4F478 /* FavouriteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5DDC9029B5504600D4F478 /* FavouriteTableViewCell.swift */; };
 		D042C1AB29BB38A000D52423 /* DetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D042C1AA29BB38A000D52423 /* DetailsTableViewCell.swift */; };
 		D042C1AD29BB79F700D52423 /* CategoryCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D042C1AC29BB79F700D52423 /* CategoryCellView.swift */; };
@@ -67,6 +68,7 @@
 		AB12701029B2691800D57357 /* RecipesModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipesModel.swift; sourceTree = "<group>"; };
 		AB12701129B2691800D57357 /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		AB12701229B2691800D57357 /* RecipeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeTableViewCell.swift; sourceTree = "<group>"; };
+		ABB243C129BCBC120078BC88 /* CategoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryModel.swift; sourceTree = "<group>"; };
 		AF5DDC9029B5504600D4F478 /* FavouriteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteTableViewCell.swift; sourceTree = "<group>"; };
 		D042C1AA29BB38A000D52423 /* DetailsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsTableViewCell.swift; sourceTree = "<group>"; };
 		D042C1AC29BB79F700D52423 /* CategoryCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCellView.swift; sourceTree = "<group>"; };
@@ -235,6 +237,7 @@
 			children = (
 				0CB19AB129AB571A00AABC61 /* СategoriesViewController.swift */,
 				D042C1AC29BB79F700D52423 /* CategoryCellView.swift */,
+				ABB243C129BCBC120078BC88 /* CategoryModel.swift */,
 			);
 			path = "Сategories Module";
 			sourceTree = "<group>";
@@ -389,6 +392,7 @@
 				D0FB06A229AF869E0080C387 /* SearchCellView.swift in Sources */,
 				0C70747B29AA73300035A981 /* UIColor + Extension.swift in Sources */,
 				0C70747929AA73300035A981 /* UILabel + Extension.swift in Sources */,
+				ABB243C229BCBC120078BC88 /* CategoryModel.swift in Sources */,
 				0CF70F7C29AB5EEF00153C01 /* TabBarModel.swift in Sources */,
 				0C55BF9629AB70DF00D5F20A /* ImageLoader.swift in Sources */,
 				0C55BF8F29AB6D0300D5F20A /* NetworkService.swift in Sources */,

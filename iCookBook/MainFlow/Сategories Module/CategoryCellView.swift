@@ -7,7 +7,7 @@
 
 import UIKit
 
-class CategoryCellView: UITableViewCell {
+final class CategoryCellView: UITableViewCell {
     
     static let identifier = "CategoryCellView"
     
@@ -15,6 +15,8 @@ class CategoryCellView: UITableViewCell {
         let image = UIImageView()
         image.translatesAutoresizingMaskIntoConstraints = false
         image.image = UIImage(named: "AppIcon")
+        image.contentMode = .scaleToFill
+        image.clipsToBounds = true
         
         return image
     }()
@@ -22,8 +24,7 @@ class CategoryCellView: UITableViewCell {
     lazy var categoryLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.text = "Hdsgshdfhdfhi"
-        label.textColor = .red
+        label.textColor = .black
         label.font = .systemFont(ofSize: 20, weight: .bold)
         
         return label
@@ -32,7 +33,9 @@ class CategoryCellView: UITableViewCell {
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         categoryImage.addSubview(categoryLabel)
-        addSubview(categoryImage)
+        contentView.addSubview(categoryImage)
+        contentView.layer.cornerRadius = 18
+        contentView.clipsToBounds = true
         backgroundColor = .clear
         setupConstraint()
     }
@@ -43,16 +46,20 @@ class CategoryCellView: UITableViewCell {
         
         NSLayoutConstraint.activate([
             
-            categoryImage.topAnchor.constraint(equalTo: topAnchor, constant: padding),
-            categoryImage.leadingAnchor.constraint(equalTo: leadingAnchor, constant: padding),
-            categoryImage.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -padding),
-            categoryImage.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -padding),
+            categoryImage.topAnchor.constraint(equalTo: contentView.topAnchor, constant: padding),
+            categoryImage.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: padding),
+            categoryImage.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -padding),
+            categoryImage.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -padding),
             
             categoryLabel.trailingAnchor.constraint(equalTo: categoryImage.trailingAnchor),
             categoryLabel.centerXAnchor.constraint(equalTo: categoryImage.centerXAnchor),
             
         ])
-        
+    }
+
+    func configure(with category: CategoryModel) {
+        self.categoryImage.image = category.image
+        self.categoryLabel.text = category.title
     }
     
     required init?(coder: NSCoder) {
