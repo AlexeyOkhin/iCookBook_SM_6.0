@@ -99,7 +99,7 @@ extension FavouriteTableViewCell {
     
     func configureWith(recipe: Recipe) {
         favouriteTitleLabel.text = recipe.title
-        ImageLoader2.shared.fetchImage(for: recipe) { image, id, error in
+        ImageLoader.shared.fetchImage(for: recipe) { image, id, error in
             if let image {
                 self.favouriteImageView.image = image
             }

@@ -7,7 +7,8 @@
 
 import UIKit
 
-struct CategoryModel {
+struct CategoryModel: Hashable {
+    let id = UUID()
     let title: String
     let image: UIImage?
 
@@ -18,5 +19,10 @@ struct CategoryModel {
         CategoryModel(title: "Fruits", image: UIImage(named: "fruits")),
         CategoryModel(title: "Snacks", image: UIImage(named: "snacks")),
         CategoryModel(title: "Eggs", image: UIImage(named: "eggs")),
+        CategoryModel(title: "Pasta", image: UIImage(named: "pasta")),
+        CategoryModel(title: "Seafood", image: UIImage(named: "seafood")),
+        CategoryModel(title: "Fruits", image: UIImage(named: "fruits")),
+        CategoryModel(title: "Snacks", image: UIImage(named: "snacks")),
+        CategoryModel(title: "Eggs", image: UIImage(named: "eggs"))
     ]
 }

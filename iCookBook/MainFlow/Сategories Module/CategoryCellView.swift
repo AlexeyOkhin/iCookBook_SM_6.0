@@ -7,16 +7,17 @@
 
 import UIKit
 
-final class CategoryCellView: UITableViewCell {
+final class CategoryCellView: UICollectionViewCell {
     
     static let identifier = "CategoryCellView"
     
     lazy var categoryImage: UIImageView = {
         let image = UIImageView()
         image.translatesAutoresizingMaskIntoConstraints = false
-        image.image = UIImage(named: "AppIcon")
+        image.image = UIImage(named: "placeholder")
         image.contentMode = .scaleToFill
         image.clipsToBounds = true
+        image.layer.cornerRadius = 5
         
         return image
     }()
@@ -29,16 +30,19 @@ final class CategoryCellView: UITableViewCell {
         
         return label
     }()
-    
-    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
-        super.init(style: style, reuseIdentifier: reuseIdentifier)
-        categoryImage.addSubview(categoryLabel)
+
+
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        contentView.addSubview(categoryLabel)
         contentView.addSubview(categoryImage)
         contentView.layer.cornerRadius = 18
         contentView.clipsToBounds = true
         backgroundColor = .clear
         setupConstraint()
     }
+
+
     
     private func setupConstraint() {
         
@@ -46,14 +50,18 @@ final class CategoryCellView: UITableViewCell {
         
         NSLayoutConstraint.activate([
             
-            categoryImage.topAnchor.constraint(equalTo: contentView.topAnchor, constant: padding),
+            //categoryImage.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 16),
+            categoryImage.topAnchor.constraint(equalTo: categoryLabel.bottomAnchor, constant: 2),
             categoryImage.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: padding),
             categoryImage.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -padding),
             categoryImage.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -padding),
             
-            categoryLabel.trailingAnchor.constraint(equalTo: categoryImage.trailingAnchor),
-            categoryLabel.centerXAnchor.constraint(equalTo: categoryImage.centerXAnchor),
-            
+//            categoryLabel.trailingAnchor.constraint(equalTo: categoryImage.trailingAnchor),
+//            categoryLabel.centerXAnchor.constraint(equalTo: categoryImage.centerXAnchor),
+            categoryLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: padding),
+            categoryLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -padding),
+            categoryLabel.topAnchor.constraint(equalTo: contentView.topAnchor),
+            categoryLabel.heightAnchor.constraint(equalToConstant: 22)
         ])
     }
 

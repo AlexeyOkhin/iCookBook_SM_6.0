@@ -7,71 +7,105 @@
 
 import UIKit
 
+enum Section: Int, CaseIterable {
+    case main
+}
 
 final class CategoryViewController: UIViewController {
 
     let cateogriesArray = CategoryModel.categoryModels
 
-    lazy var tableView: UITableView = {
-        let table = UITableView()
-        table.register(CategoryCellView.self,
-                       forCellReuseIdentifier: CategoryCellView.identifier)
-        table.translatesAutoresizingMaskIntoConstraints = false
-        table.backgroundColor = .clear
-        return table
-    }()
+    var collectionView: UICollectionView!
+    var dataSource: UICollectionViewDiffableDataSource<Section, CategoryModel>?
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
-        view.addSubview(tableView)
-        tableView.dataSource = self
-        tableView.delegate = self
-        setupConstraints()
+        title = "Categories"
+        navigationController?.navigationBar.prefersLargeTitles = true
+
+        setupCollectionView()
+        createDataSource()
+        reloadData()
+    }
+
+    private func setupCollectionView() {
+        collectionView = UICollectionView(frame: view.bounds, collectionViewLayout: createCompositionalLayout())
+        collectionView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+        collectionView.backgroundColor = .systemBackground
+        view.addSubview(collectionView)
+
+
+        collectionView.register(CategoryCellView.self, forCellWithReuseIdentifier: CategoryCellView.identifier)
+
+        collectionView.delegate = self
+    }
+
+    private func createCompositionalLayout() -> UICollectionViewLayout {
+        let layout = UICollectionViewCompositionalLayout { sectionIndex, layoutEnviroment -> NSCollectionLayoutSection? in
+            guard let section = Section(rawValue: sectionIndex) else { fatalError("Unknown section kind") }
+            switch section {
+            case .main: return self.createCategoryLayout()
+            }
+        }
+
+        let config = UICollectionViewCompositionalLayoutConfiguration()
+        config.interSectionSpacing = 20
+        layout.configuration = config
+
+        return layout
+    }
+
+    private func reloadData() {
+        var snapshot = NSDiffableDataSourceSnapshot<Section, CategoryModel>()
+        snapshot.appendSections([.main])
+        snapshot.appendItems(cateogriesArray, toSection: .main)
+
+        dataSource?.apply(snapshot, animatingDifferences: true)
+
+    }
+
+    private func createCategoryLayout() -> NSCollectionLayoutSection {
+        let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(0.5),
+                                              heightDimension: .fractionalHeight(1))
+        let item = NSCollectionLayoutItem(layoutSize: itemSize)
+
+        let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1),
+                                               heightDimension: .absolute(120))
+        let group: NSCollectionLayoutGroup = .horizontal(layoutSize: groupSize, subitem: item, count: 2)
+
+        let section = NSCollectionLayoutSection(group: group)
+        section.interGroupSpacing = 8
+        section.contentInsets = .init(top: 16, leading: 10, bottom: 0, trailing: 10)
+
+
+        return section
     }
 
 
-    
-    private func setupConstraints() {
-        
-        NSLayoutConstraint.activate([
-            tableView.leadingAnchor.constraint(equalTo: view.layoutMarginsGuide.leadingAnchor),
-            tableView.trailingAnchor.constraint(equalTo: view.layoutMarginsGuide.trailingAnchor),
-            tableView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
-            tableView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor),
-        ])
-        
+}
+
+extension CategoryViewController: UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        guard let category = self.dataSource?.itemIdentifier(for: indexPath) else { return }
+        let categoryVC = HomeViewController(category: category)
+        navigationController?.pushViewController(categoryVC, animated: true)
+
     }
 }
 
-extension CategoryViewController: UITableViewDelegate, UITableViewDataSource {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return cateogriesArray.count
-    }
-    
-    //MARK: FOR CREATING CELL
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: CategoryCellView.identifier,
-                                                       for: indexPath) as! CategoryCellView
-        let category = cateogriesArray[indexPath.row]
+extension CategoryViewController {
 
-        cell.configure(with: category)
-        
-        
-        return cell
-    }
-    
-    //MARK: FOR CHANGING CELL HEIGHT
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 200
-    }
-    
-    //MARK: FOR SELECTING CELL HEIGHT
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let category = cateogriesArray[indexPath.row]
-
-        let categoryVC = HomeViewController(category: category)
-
-        navigationController?.pushViewController(categoryVC, animated: true)
+    private func createDataSource() {
+        dataSource = UICollectionViewDiffableDataSource<Section, CategoryModel>(collectionView: collectionView, cellProvider: { collectionView, indexPath, category in
+            guard let section = Section(rawValue: indexPath.section) else { fatalError("Unknown section kind") }
+            switch section {
+            case .main:
+                let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CategoryCellView.identifier, for: indexPath) as! CategoryCellView
+                cell.configure(with: category)
+                return cell
+            }
+        })
     }
 }

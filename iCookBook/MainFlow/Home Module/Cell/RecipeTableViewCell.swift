@@ -149,14 +149,6 @@ final class RecipeTableViewCell: UITableViewCell {
         recipeImageView.image = nil
         secondaryLabel.text = nil
         favoritesButton.tintColor = .white
-        
-//        switch favRecipe?.isFaved {
-//        case true:
-//            favoritesButton.tintColor = .orange
-//        default:
-//            favoritesButton.tintColor = .white
-//        }
-        
     }
     
     func configureWith(recipe: Recipe) {
@@ -164,7 +156,7 @@ final class RecipeTableViewCell: UITableViewCell {
         let secondarytext = "\(recipe.extendedIngredients.count) ингредиентов | \(recipe.readyInMinutes) минут"
         secondaryLabel.text = secondarytext
         
-        ImageLoader2.shared.fetchImage(for: recipe) { image, id, error in
+        ImageLoader.shared.fetchImage(for: recipe) { image, id, error in
             if let image {
                 self.recipeImageView.image = image
             }

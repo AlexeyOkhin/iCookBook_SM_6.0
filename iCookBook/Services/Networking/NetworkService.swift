@@ -19,7 +19,7 @@ final class NetworkService: NetworkServicesProtocol {
     private let request = "?"
     private let random = "random"
     private let complexSearch = "complexSearch"
-    private let apiKey = PrivateConstants.apiKey2
+    private let apiKey = PrivateConstants.apiKey
     //MARK: -  Methods
     
     func getPopularRecipes(completion: @escaping (Result<SpoonacularModel, Error>) -> Void) {

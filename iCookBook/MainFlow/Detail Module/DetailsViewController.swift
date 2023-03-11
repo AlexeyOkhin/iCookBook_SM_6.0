@@ -84,7 +84,7 @@ final class DetailsViewController: UIViewController {
         timerLabel.text = "Preparing in \(recipe.readyInMinutes) minutes"
         ingredients = recipe.extendedIngredients
         
-        ImageLoader2.shared.fetchImage(for: recipe) { image, id, error in
+        ImageLoader.shared.fetchImage(for: recipe) { image, id, error in
             if let image {
                 self.foodImage.image = image
             }
