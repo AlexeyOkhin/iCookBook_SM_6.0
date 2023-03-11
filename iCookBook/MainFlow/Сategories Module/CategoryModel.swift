@@ -19,10 +19,10 @@ struct CategoryModel: Hashable {
         CategoryModel(title: "Fruits", image: UIImage(named: "fruits")),
         CategoryModel(title: "Snacks", image: UIImage(named: "snacks")),
         CategoryModel(title: "Eggs", image: UIImage(named: "eggs")),
-        CategoryModel(title: "Pasta", image: UIImage(named: "pasta")),
+        CategoryModel(title: "Vegetables", image: UIImage(named: "vegetables")),
         CategoryModel(title: "Seafood", image: UIImage(named: "seafood")),
-        CategoryModel(title: "Fruits", image: UIImage(named: "fruits")),
-        CategoryModel(title: "Snacks", image: UIImage(named: "snacks")),
-        CategoryModel(title: "Eggs", image: UIImage(named: "eggs"))
+        CategoryModel(title: "Desserts", image: UIImage(named: "desserts")),
+        CategoryModel(title: "Pizza", image: UIImage(named: "pizza")),
+        CategoryModel(title: "Soup", image: UIImage(named: "soup"))
     ]
 }

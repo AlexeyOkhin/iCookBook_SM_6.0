@@ -36,10 +36,12 @@ final class CategoryCellView: UICollectionViewCell {
         super.init(frame: frame)
         contentView.addSubview(categoryLabel)
         contentView.addSubview(categoryImage)
-        contentView.layer.cornerRadius = 18
         contentView.clipsToBounds = true
-        backgroundColor = .clear
+        backgroundColor = .systemBackground
         setupConstraint()
+        layer.cornerRadius = 5
+
+
     }
 
 
@@ -49,15 +51,11 @@ final class CategoryCellView: UICollectionViewCell {
         let padding = 8.0
         
         NSLayoutConstraint.activate([
-            
-            //categoryImage.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 16),
             categoryImage.topAnchor.constraint(equalTo: categoryLabel.bottomAnchor, constant: 2),
             categoryImage.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: padding),
             categoryImage.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -padding),
             categoryImage.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -padding),
-            
-//            categoryLabel.trailingAnchor.constraint(equalTo: categoryImage.trailingAnchor),
-//            categoryLabel.centerXAnchor.constraint(equalTo: categoryImage.centerXAnchor),
+
             categoryLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: padding),
             categoryLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -padding),
             categoryLabel.topAnchor.constraint(equalTo: contentView.topAnchor),
