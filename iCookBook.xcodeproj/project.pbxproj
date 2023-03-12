@@ -129,13 +129,14 @@
 		0C70745729AA71380035A981 /* iCookBook */ = {
 			isa = PBXGroup;
 			children = (
+				D03B3BEE29BDCA0900827114 /* Model */,
+				D03B3BEF29BDCA6000827114 /* View */,
+				D03B3BF029BDCAB400827114 /* Controller */,
 				0C583B3429AB72B900739429 /* PrivateKeys */,
 				0CF70F7729AB5EA500153C01 /* Services */,
-				0C70746D29AA72210035A981 /* Guidelines */,
 				0C70746F29AA723B0035A981 /* Application */,
 				0C70746C29AA71990035A981 /* Resources */,
 				0C70747029AA73300035A981 /* Extensions */,
-				0C70747F29AA73AD0035A981 /* MainFlow */,
 			);
 			path = iCookBook;
 			sourceTree = "<group>";
@@ -143,8 +144,8 @@
 		0C70746C29AA71990035A981 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				0C70746D29AA72210035A981 /* Guidelines */,
 				0C70746129AA713B0035A981 /* Assets.xcassets */,
-				0C70746329AA713B0035A981 /* LaunchScreen.storyboard */,
 				0C70746629AA713B0035A981 /* Info.plist */,
 			);
 			path = Resources;
@@ -162,7 +163,6 @@
 			isa = PBXGroup;
 			children = (
 				0C70747129AA73300035A981 /* UIKit */,
-				0C70747829AA73300035A981 /* Elements */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -176,73 +176,6 @@
 				0C70747629AA73300035A981 /* UIViewControler + Extension.swift */,
 			);
 			path = UIKit;
-			sourceTree = "<group>";
-		};
-		0C70747829AA73300035A981 /* Elements */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Elements;
-			sourceTree = "<group>";
-		};
-		0C70747F29AA73AD0035A981 /* MainFlow */ = {
-			isa = PBXGroup;
-			children = (
-				0CF70F7929AB5EEF00153C01 /* TabBar */,
-				0CB19AAA29AA761E00AABC61 /* Detail Module */,
-				0CB19AA929AA75DC00AABC61 /* Сategories Module */,
-				0CB19AA829AA75CC00AABC61 /* Search Module */,
-				0CB19AA729AA75A700AABC61 /* Favorites Module */,
-				0CB19AA629AA758900AABC61 /* Home Module */,
-			);
-			path = MainFlow;
-			sourceTree = "<group>";
-		};
-		0CB19AA629AA758900AABC61 /* Home Module */ = {
-			isa = PBXGroup;
-			children = (
-				AB12700E29B2691800D57357 /* Cell */,
-				0C70745C29AA71380035A981 /* HomeViewController.swift */,
-			);
-			path = "Home Module";
-			sourceTree = "<group>";
-		};
-		0CB19AA729AA75A700AABC61 /* Favorites Module */ = {
-			isa = PBXGroup;
-			children = (
-				0CB19AAD29AB56DF00AABC61 /* FavoritesViewController.swift */,
-				AF5DDC9029B5504600D4F478 /* FavouriteTableViewCell.swift */,
-			);
-			path = "Favorites Module";
-			sourceTree = "<group>";
-		};
-		0CB19AA829AA75CC00AABC61 /* Search Module */ = {
-			isa = PBXGroup;
-			children = (
-				0CB19AAF29AB56FE00AABC61 /* SearchViewController.swift */,
-				D0FB06A329AFA8210080C387 /* ResultsVC.swift */,
-				D0FB06A129AF869E0080C387 /* SearchCellView.swift */,
-			);
-			path = "Search Module";
-			sourceTree = "<group>";
-		};
-		0CB19AA929AA75DC00AABC61 /* Сategories Module */ = {
-			isa = PBXGroup;
-			children = (
-				0CB19AB129AB571A00AABC61 /* СategoriesViewController.swift */,
-				D042C1AC29BB79F700D52423 /* CategoryCellView.swift */,
-				ABB243C129BCBC120078BC88 /* CategoryModel.swift */,
-			);
-			path = "Сategories Module";
-			sourceTree = "<group>";
-		};
-		0CB19AAA29AA761E00AABC61 /* Detail Module */ = {
-			isa = PBXGroup;
-			children = (
-				0CB19AAB29AB56B500AABC61 /* DetailsViewController.swift */,
-				D042C1AA29BB38A000D52423 /* DetailsTableViewCell.swift */,
-			);
-			path = "Detail Module";
 			sourceTree = "<group>";
 		};
 		0CF70F7429AB5DF700153C01 /* Storage */ = {
@@ -272,31 +205,42 @@
 			path = Networking;
 			sourceTree = "<group>";
 		};
-		0CF70F7929AB5EEF00153C01 /* TabBar */ = {
-			isa = PBXGroup;
-			children = (
-				0CF70F7A29AB5EEF00153C01 /* TabBarModel.swift */,
-				0CF70F7B29AB5EEF00153C01 /* TabBarConfigurator.swift */,
-			);
-			path = TabBar;
-			sourceTree = "<group>";
-		};
-		AB12700E29B2691800D57357 /* Cell */ = {
-			isa = PBXGroup;
-			children = (
-				AB12700F29B2691800D57357 /* DTO */,
-				AB12701229B2691800D57357 /* RecipeTableViewCell.swift */,
-			);
-			path = Cell;
-			sourceTree = "<group>";
-		};
-		AB12700F29B2691800D57357 /* DTO */ = {
+		D03B3BEE29BDCA0900827114 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				AB12701029B2691800D57357 /* RecipesModel.swift */,
-				AB12701129B2691800D57357 /* GradientView.swift */,
+				0CF70F7A29AB5EEF00153C01 /* TabBarModel.swift */,
+				ABB243C129BCBC120078BC88 /* CategoryModel.swift */,
 			);
-			path = DTO;
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D03B3BEF29BDCA6000827114 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D042C1AA29BB38A000D52423 /* DetailsTableViewCell.swift */,
+				D0FB06A129AF869E0080C387 /* SearchCellView.swift */,
+				D042C1AC29BB79F700D52423 /* CategoryCellView.swift */,
+				AF5DDC9029B5504600D4F478 /* FavouriteTableViewCell.swift */,
+				AB12701229B2691800D57357 /* RecipeTableViewCell.swift */,
+				AB12701129B2691800D57357 /* GradientView.swift */,
+				0C70746329AA713B0035A981 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D03B3BF029BDCAB400827114 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0CB19AAB29AB56B500AABC61 /* DetailsViewController.swift */,
+				0CB19AAF29AB56FE00AABC61 /* SearchViewController.swift */,
+				D0FB06A329AFA8210080C387 /* ResultsVC.swift */,
+				0CB19AAD29AB56DF00AABC61 /* FavoritesViewController.swift */,
+				0C70745C29AA71380035A981 /* HomeViewController.swift */,
+				0CB19AB129AB571A00AABC61 /* СategoriesViewController.swift */,
+				0CF70F7B29AB5EEF00153C01 /* TabBarConfigurator.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
