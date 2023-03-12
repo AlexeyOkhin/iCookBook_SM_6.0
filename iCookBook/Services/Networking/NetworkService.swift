@@ -25,7 +25,6 @@ final class NetworkService: NetworkServicesProtocol {
     func getPopularRecipes(completion: @escaping (Result<SpoonacularModel, Error>) -> Void) {
 
         let urlString = "\(baseUrl)\(random)?/&apiKey=\(apiKey)&number=20&sort=popular"
-        print(urlString)
         guard let url = URL(string: urlString) else { return }
 
         URLSession.shared.dataTask(with: url) { data, _, error in
@@ -49,7 +48,6 @@ final class NetworkService: NetworkServicesProtocol {
     func getRecipesByQuery(query: String, completion: @escaping (Result<SpoonacularModel, Error>) -> Void) {
 
         let urlString = "\(baseUrl)/\(random)?/&apiKey=\(apiKey)&tags=\(query.lowercased())&number=20&sort=popular"
-        print(urlString)
         guard let url = URL(string: urlString) else { return }
 
         URLSession.shared.dataTask(with: url) { data, _, error in
@@ -68,31 +66,5 @@ final class NetworkService: NetworkServicesProtocol {
             }
         }.resume()
     }
-    
-//
-//    func getAllRecipes(completion: @escaping (Result<RecipeResults, Error>) -> Void) {
-//
-//        let urlString = "\(baseUrl)/\(complexSearch)?&apiKey=\(apiKey)&addRecipeInformation=true"
-//        guard let url = URL(string: urlString) else { return }
-//        print(url)
-//
-//        URLSession.shared.dataTask(with: url) { data, _, error in
-//            if let error = error {
-//                completion(.failure(error))
-//                return
-//            }
-//
-//            guard let data else { return }
-//
-//            do {
-//                let object = try JSONDecoder().decode(RecipeResults.self, from: data)
-//                completion(.success(object))
-//            } catch {
-//                completion(.failure(error))
-//                print("ERROR")
-//            }
-//        }.resume()
-//    }
-
     
 }

@@ -55,6 +55,7 @@ extension FavoritesViewController {
     
     private func configureNavigationTitle() {
         title = "Favorites"
+        navigationController?.navigationBar.prefersLargeTitles = true
     }
     
     private func showLabel() {

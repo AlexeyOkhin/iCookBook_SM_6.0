@@ -29,6 +29,7 @@ final class SearchViewController: UIViewController {
         viewUpdate()
         setupConstraints()
         setupSearchController()
+        configureNavigationTitle()
     }
     
 }
@@ -45,6 +46,11 @@ extension SearchViewController {
         view.addSubview(letsFindLabel)
     }
     
+    private func configureNavigationTitle() {
+        title = "Recipes"
+        navigationController?.navigationBar.prefersLargeTitles = true
+    }
+    
     // MARK: Updates for search controller
     private func setupSearchController() {
         searchController.searchResultsUpdater = self
@@ -54,10 +60,6 @@ extension SearchViewController {
         searchController.searchBar.searchTextField.textColor = .black
         navigationItem.searchController = searchController
         definesPresentationContext = true
-        navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "AppIcon"),
-                                                           style: .plain,
-                                                           target: nil,
-                                                           action: nil)
     }
     
     // MARK: Constraints update
