@@ -6,7 +6,7 @@
 	<integer>10</integer>
 	<key>logs</key>
 	<dict>
-		<key>17E1A379-774B-4724-9FB1-2E2D3A043BFB</key>
+		<key>2E94C18A-4088-4456-8BE8-BD249CF55B95</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -15,7 +15,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>17E1A379-774B-4724-9FB1-2E2D3A043BFB.xcactivitylog</string>
+			<string>2E94C18A-4088-4456-8BE8-BD249CF55B95.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -32,15 +32,15 @@
 			<key>signature</key>
 			<string>Build iCookBook</string>
 			<key>timeStartedRecording</key>
-			<real>699036936.12869799</real>
+			<real>699099493.91100001</real>
 			<key>timeStoppedRecording</key>
-			<real>699036936.54017401</real>
+			<real>699099493.96590698</real>
 			<key>title</key>
 			<string>Build iCookBook</string>
 			<key>uniqueIdentifier</key>
-			<string>17E1A379-774B-4724-9FB1-2E2D3A043BFB</string>
+			<string>2E94C18A-4088-4456-8BE8-BD249CF55B95</string>
 		</dict>
-		<key>2E39B792-82D1-4A06-A537-5708F5815160</key>
+		<key>AC92EBF7-88D4-46E5-A3F3-6DC0F290CF33</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -49,177 +49,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>2E39B792-82D1-4A06-A537-5708F5815160.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>S</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>iCookBook project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>iCookBook</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build iCookBook</string>
-			<key>timeStartedRecording</key>
-			<real>699037021.90471697</real>
-			<key>timeStoppedRecording</key>
-			<real>699037028.21911395</real>
-			<key>title</key>
-			<string>Build iCookBook</string>
-			<key>uniqueIdentifier</key>
-			<string>2E39B792-82D1-4A06-A537-5708F5815160</string>
-		</dict>
-		<key>48555DF2-6434-46E3-AC3E-84A302EE62F5</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>48555DF2-6434-46E3-AC3E-84A302EE62F5.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>S</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>iCookBook project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>iCookBook</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build iCookBook</string>
-			<key>timeStartedRecording</key>
-			<real>699036874.61647499</real>
-			<key>timeStoppedRecording</key>
-			<real>699036882.28056204</real>
-			<key>title</key>
-			<string>Build iCookBook</string>
-			<key>uniqueIdentifier</key>
-			<string>48555DF2-6434-46E3-AC3E-84A302EE62F5</string>
-		</dict>
-		<key>591300BB-1362-4402-B8F0-819A1995BF62</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>591300BB-1362-4402-B8F0-819A1995BF62.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>S</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>iCookBook project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>iCookBook</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build iCookBook</string>
-			<key>timeStartedRecording</key>
-			<real>699036835.52942204</real>
-			<key>timeStoppedRecording</key>
-			<real>699036835.62640202</real>
-			<key>title</key>
-			<string>Build iCookBook</string>
-			<key>uniqueIdentifier</key>
-			<string>591300BB-1362-4402-B8F0-819A1995BF62</string>
-		</dict>
-		<key>6FE934A3-A058-4EAD-8749-6B9224A360DB</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>6FE934A3-A058-4EAD-8749-6B9224A360DB.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>S</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>iCookBook project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>iCookBook</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build iCookBook</string>
-			<key>timeStartedRecording</key>
-			<real>699094675.65765595</real>
-			<key>timeStoppedRecording</key>
-			<real>699094679.78548205</real>
-			<key>title</key>
-			<string>Build iCookBook</string>
-			<key>uniqueIdentifier</key>
-			<string>6FE934A3-A058-4EAD-8749-6B9224A360DB</string>
-		</dict>
-		<key>9D89F361-6AA4-4C70-8716-F1A3ED8A02A0</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>9D89F361-6AA4-4C70-8716-F1A3ED8A02A0.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>S</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>iCookBook project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>iCookBook</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build iCookBook</string>
-			<key>timeStartedRecording</key>
-			<real>699094456.17612302</real>
-			<key>timeStoppedRecording</key>
-			<real>699094473.55544102</real>
-			<key>title</key>
-			<string>Build iCookBook</string>
-			<key>uniqueIdentifier</key>
-			<string>9D89F361-6AA4-4C70-8716-F1A3ED8A02A0</string>
-		</dict>
-		<key>E1860EBE-C5E2-4579-8C99-12A7A477F83E</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>E1860EBE-C5E2-4579-8C99-12A7A477F83E.xcactivitylog</string>
+			<string>AC92EBF7-88D4-46E5-A3F3-6DC0F290CF33.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -236,15 +66,15 @@
 			<key>signature</key>
 			<string>Build iCookBook</string>
 			<key>timeStartedRecording</key>
-			<real>699036882.35978997</real>
+			<real>699102031.19229102</real>
 			<key>timeStoppedRecording</key>
-			<real>699036894.74729598</real>
+			<real>699102031.71048796</real>
 			<key>title</key>
 			<string>Build iCookBook</string>
 			<key>uniqueIdentifier</key>
-			<string>E1860EBE-C5E2-4579-8C99-12A7A477F83E</string>
+			<string>AC92EBF7-88D4-46E5-A3F3-6DC0F290CF33</string>
 		</dict>
-		<key>E46037DC-9E77-4491-BB6C-EC6E6C82CE28</key>
+		<key>FE5D9D74-C743-4871-82A9-F9F393D9E92B</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -253,7 +83,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>E46037DC-9E77-4491-BB6C-EC6E6C82CE28.xcactivitylog</string>
+			<string>FE5D9D74-C743-4871-82A9-F9F393D9E92B.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -270,47 +100,13 @@
 			<key>signature</key>
 			<string>Build iCookBook</string>
 			<key>timeStartedRecording</key>
-			<real>699094646.308218</real>
+			<real>699101784.42973006</real>
 			<key>timeStoppedRecording</key>
-			<real>699094651.34658003</real>
+			<real>699101792.43028402</real>
 			<key>title</key>
 			<string>Build iCookBook</string>
 			<key>uniqueIdentifier</key>
-			<string>E46037DC-9E77-4491-BB6C-EC6E6C82CE28</string>
-		</dict>
-		<key>FC3A2F78-E69C-4543-882A-69F6294DFE7D</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>FC3A2F78-E69C-4543-882A-69F6294DFE7D.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>S</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>iCookBook project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>iCookBook</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build iCookBook</string>
-			<key>timeStartedRecording</key>
-			<real>699036882.28654695</real>
-			<key>timeStoppedRecording</key>
-			<real>699036882.35846305</real>
-			<key>title</key>
-			<string>Build iCookBook</string>
-			<key>uniqueIdentifier</key>
-			<string>FC3A2F78-E69C-4543-882A-69F6294DFE7D</string>
+			<string>FE5D9D74-C743-4871-82A9-F9F393D9E92B</string>
 		</dict>
 	</dict>
 </dict>
